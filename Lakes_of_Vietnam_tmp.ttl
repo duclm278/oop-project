@@ -1,0 +1,538 @@
+@prefix dbc:          <http://dbpedia.org/resource/Category:> .
+@prefix dbd:          <http://dbpedia.org/datatype/> .
+@prefix dbo:          <http://dbpedia.org/ontology/> .
+@prefix dbp:          <http://dbpedia.org/property/> .
+@prefix dbpedia-ca:   <http://ca.dbpedia.org/resource/> .
+@prefix dbpedia-de:   <http://de.dbpedia.org/resource/> .
+@prefix dbpedia-eo:   <http://eo.dbpedia.org/resource/> .
+@prefix dbpedia-es:   <http://es.dbpedia.org/resource/> .
+@prefix dbpedia-fr:   <http://fr.dbpedia.org/resource/> .
+@prefix dbpedia-it:   <http://it.dbpedia.org/resource/> .
+@prefix dbpedia-pt:   <http://pt.dbpedia.org/resource/> .
+@prefix dbpedia-sl:   <http://sl.dbpedia.org/resource/> .
+@prefix dbr:          <http://dbpedia.org/resource/> .
+@prefix dbt:          <http://dbpedia.org/resource/Template:> .
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix geo:          <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix georss:       <http://www.georss.org/georss/> .
+@prefix gold:         <http://purl.org/linguistics/gold/> .
+@prefix ns14:         <https://archive.org/details/> .
+@prefix ns15:         <https://global.dbpedia.org/id/> .
+@prefix ns18:         <http://www.w3.org/2006/03/wn/wn20/instances/> .
+@prefix ns22:         <http://dbpedia.org/ontology/Lake/> .
+@prefix ns30:         <https://web.archive.org/web/20121026071808/http:/www.asiatourmagazine.com/> .
+@prefix ns31:         <https://archive.today/20130216044429/http:/havecamerawilltravel.com/> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix prov:         <http://www.w3.org/ns/prov#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:       <http://schema.org/> .
+@prefix wikidata:     <http://www.wikidata.org/entity/> .
+@prefix wikipedia-en: <http://en.wikipedia.org/wiki/> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix yago:         <http://dbpedia.org/class/yago/> .
+@prefix yago-res:     <http://yago-knowledge.org/resource/> .
+
+dbr:Thác_Bà_Lake  rdf:type        schema:Place , dbo:BodyOfWater , yago:YagoGeoEntity , dbo:Place , yago:WikicatLakesOfVietnam , yago:YagoPermanentlyLocatedEntity , yago:Thing100002452 , yago:BodyOfWater109225146 , geo:SpatialThing , dbo:Location , dbo:NaturalPlace , yago:Lake109328904 , dbo:Lake , schema:BodyOfWater , owl:Thing , yago:PhysicalEntity100001930 ;
+        rdfs:comment              "The Thác Bà Lake (Vietnamese: Hồ Thác Bà) is a manmade lake in Yên Bái Province, Vietnam created by construction of the in the 1960s. Thác Bà is the name of the which pre-existed the dam (cf. Vietnamese: thác nước, waterfall)."@en ;
+        rdfs:label                "Thác Bà Lake"@en ;
+        dbo:abstract              "The Thác Bà Lake (Vietnamese: Hồ Thác Bà) is a manmade lake in Yên Bái Province, Vietnam created by construction of the in the 1960s. Thác Bà is the name of the which pre-existed the dam (cf. Vietnamese: thác nước, waterfall)."@en ;
+        dbo:location              dbr:Vietnam ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Thác_Bà_Lake.jpg?width=300> ;
+        dbo:type                  dbr:Reservoir ;
+        dbo:wikiPageID            37122561 ;
+        dbo:wikiPageLength        "3610"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1064692677 ;
+        dbo:wikiPageWikiLink      dbr:Vietnam , dbr:Yên_Bái_province , dbr:Thác_Bà_hydroelectric_plant , dbr:Bà_Falls , dbr:Reservoir , dbr:File:Thác_Bà_lake_-_panorama.jpg , dbr:Category:Lakes_of_Vietnam ;
+        dbp:caption               "Thác Bà Lake"@en ;
+        dbp:location              dbr:Vietnam ;
+        dbp:name                  "Thác Bà Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:pushpinMapAlt         "Location of the lake in Vietnam."@en ;
+        dbp:type                  dbr:Reservoir ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Coord , dbr:Template:Native_name , dbr:Template:Infobox_body_of_water , dbr:Template:Reflist , dbr:Template:YenBai-geo-stub ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "21.727521 105.021495" ;
+        owl:sameAs                <http://vi.dbpedia.org/resource/Hồ_Thác_Bà> , wikidata:Q7799842 , <http://rdf.freebase.com/ns/m.0n3zm_x> , <http://ru.dbpedia.org/resource/Тхакба> , ns15:4w8C3 ;
+        geo:lat                   "21.727521896362304688"^^xsd:float ;
+        geo:long                  "105.02149200439453125"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Thác_Bà_Lake?oldid=1064692677&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Thác_Bà_Lake.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Thác_Bà_lake_-_panorama.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Thác_Bà_Lake ;
+        foaf:name                 "Thác Bà Lake"@en .
+
+dbr:Phú_Ninh_Lake  rdf:type       geo:SpatialThing , owl:Thing , dbo:NaturalPlace , wikidata:Q23397 , dbo:Lake , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , dbo:Place , dbo:Location , yago:WikicatLakesOfVietnam , yago:YagoGeoEntity , yago:PhysicalEntity100001930 , schema:LakeBodyOfWater , schema:Place , yago:Lake109328904 , yago:Thing100002452 , dbo:BodyOfWater , schema:BodyOfWater ;
+        rdfs:comment              "Lake Phú Ninh is an artificial lake in Phú Ninh District, Quảng Nam Province, Vietnam."@en ;
+        rdfs:label                "Phú Ninh Lake"@en ;
+        dbo:abstract              "Lake Phú Ninh is an artificial lake in Phú Ninh District, Quảng Nam Province, Vietnam."@en ;
+        dbo:areaTotal             34330000.0 ;
+        dbo:country               dbr:Vietnam ;
+        dbo:location              dbr:Phú_Ninh_District ;
+        dbo:nearestCity           dbr:Tam_Kỳ ;
+        dbo:type                  dbr:Reservoir ;
+        dbo:wikiPageExternalLink  <http://www.qdnd.vn/QDNDSite/en-US/75/72/182/159/199/81203/Default.aspx> , <http://www.hoianlocalguide.com/phu-ninh-lake/> ;
+        dbo:wikiPageID            24430157 ;
+        dbo:wikiPageLength        "8748"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063468749 ;
+        dbo:wikiPageWikiLink      dbr:Tam_Kỳ , dbr:Vietnam , <http://dbpedia.org/resource/Vietnam's_Red_Data_Book> , <http://dbpedia.org/resource/Class_(biology)> , dbr:Hydroelectricity , dbr:Kilowatt-hour , dbr:Category:Lakes_of_Vietnam , dbr:Javan_rhinoceros , dbr:Little_egret , dbr:Category:Landforms_of_Quảng_Nam_province , dbr:Eucalyptus , dbr:Quảng_Nam_province , dbr:Reservoir , dbr:Da_Nang , dbr:Pythonidae , <http://dbpedia.org/resource/Family_(biology)> , dbr:Cobra , dbr:Mineral_water , dbr:Yellow-cheeked_gibbon , dbr:Vertebrate , dbr:Igneous_rock , dbr:Núi_Thành_district , dbr:Chu_Lai_Airport , dbr:Red-shanked_douc , dbr:Crab-eating_macaque , dbr:Phú_Ninh_District , dbr:Invertebrate , dbr:Intentional_community , dbr:Milpa , dbr:Sandstone , <http://dbpedia.org/resource/Ministry_of_Agriculture_and_Rural_Development_(Vietnam)> ;
+        dbp:basinCountries        dbr:Vietnam ;
+        dbp:cities                dbr:Tam_Kỳ ;
+        dbp:islands               30 ;
+        dbp:lakeType              dbr:Reservoir ;
+        dbp:location              "Phú Ninh District, Quảng Nam"@en ;
+        dbp:name                  "Phú Ninh"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Convert , dbr:Template:Clarify , dbr:Template:Unreferenced , dbr:Template:Coord , dbr:Template:Infobox_lake ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Quảng_Nam_province ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "15.485277777777778 108.45722222222223" ;
+        owl:sameAs                <http://zh.dbpedia.org/resource/富宁湖> , <http://rdf.freebase.com/ns/m.07s42xg> , <http://vi.dbpedia.org/resource/Hồ_Phú_Ninh> , ns15:4u3xY , <http://sws.geonames.org/7909764/> , wikidata:Q7188254 ;
+        geo:lat                   "15.485278129577636719"^^xsd:float ;
+        geo:long                  "108.45722198486328125"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Phú_Ninh_Lake?oldid=1063468749&ns=0> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Phú_Ninh_Lake ;
+        foaf:name                 "Phú Ninh"@en .
+
+dbr:Núi_Cốc_Lake  rdf:type        schema:BodyOfWater , dbo:BodyOfWater , dbo:Lake , schema:Place , yago:PhysicalEntity100001930 , geo:SpatialThing , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , owl:Thing , dbo:Location , yago:WikicatLakesOfVietnam , yago:Thing100002452 , dbo:Place , yago:YagoGeoEntity , yago:Lake109328904 , dbo:NaturalPlace ;
+        rdfs:comment              "Núi Cốc Lake (Vietnamese: Hồ Núi Cốc) is a man-made lake, approximately 25 kilometres (16 mi) west of the city of Thái Nguyên in Thái Nguyên Province, Vietnam, in Tam Đảo National Park. It is a popular visitor attraction on account of the legend associated with the 89 islands within the lake."@en ;
+        rdfs:label                "Núi Cốc Lake"@en ;
+        dbo:abstract              "Núi Cốc Lake (Vietnamese: Hồ Núi Cốc) is a man-made lake, approximately 25 kilometres (16 mi) west of the city of Thái Nguyên in Thái Nguyên Province, Vietnam, in Tam Đảo National Park. It is a popular visitor attraction on account of the legend associated with the 89 islands within the lake."@en ;
+        dbo:areaTotal             25000000.0 ;
+        dbo:averageDepth          23.0 ;
+        dbo:country               dbr:Vietnam ;
+        dbo:inflow                dbr:Công_River ;
+        dbo:nearestCity           dbr:Thái_Nguyên ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Hồ_Núi_Cốc_01.jpg?width=300> ;
+        dbo:wikiPageID            27878032 ;
+        dbo:wikiPageLength        "8533"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063480180 ;
+        dbo:wikiPageWikiLink      dbr:Thái_Nguyên , <http://dbpedia.org/resource/Egretta_spp.> , dbr:A._acuta , dbr:Vietnamese_đồng , dbr:Thái_Nguyên_province , dbr:Tam_Đảo_National_Park , dbr:Eurasian_teal , dbr:Dinosaur , <http://dbpedia.org/resource/Mandarin_(bureaucrat)> , dbr:File:Nuicoc-lake-gateway.JPG , dbr:Alligator , dbr:Rhodomyrtus_tomentosa , dbr:Fairy , dbr:Bear , dbr:Social_status , <http://dbpedia.org/resource/File:Nuicoc-lake-buddha&tourboats.JPG> , dbr:Melastoma_septemnervium , dbr:Lesser_whistling_duck , <http://dbpedia.org/resource/Red_River_(Asia)> , dbr:Ecotourism , dbr:Category:Lakes_of_Vietnam , dbr:Bodhisattva , dbr:Category:Tourist_attractions_in_Thái_Nguyên_province , dbr:File:Nui_Coc_Lake2.jpg , dbr:Ostrich , dbr:Category:Landforms_of_Thái_Nguyên_province , dbr:Chinese_pond_heron , dbr:Công_River , dbr:Vietnam ;
+        dbp:basinCountries        dbr:Vietnam ;
+        dbp:caption               "Nui Coc Lake and surrounding mountains"@en ;
+        dbp:cities                "Thái Nguyên"@en ;
+        dbp:inflow                dbr:Công_River ;
+        dbp:islands               89 ;
+        dbp:name                  "Núi Cốc Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Convert , dbr:Template:Infobox_lake , dbr:Template:Coord , dbr:Template:Commons_category , dbr:Template:Reflist ;
+        dct:subject               dbr:Category:Landforms_of_Thái_Nguyên_province , dbr:Category:Tourist_attractions_in_Thái_Nguyên_province , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "21.579444444444444 105.69388888888889" ;
+        owl:sameAs                <http://ja.dbpedia.org/resource/ヌイコック湖> , <http://rdf.freebase.com/ns/m.0cc905v> , <http://ceb.dbpedia.org/resource/Hồ_Núi_Cốc> , ns15:4st1h , wikidata:Q7068798 , <http://vi.dbpedia.org/resource/Hồ_Núi_Cốc> , <http://sws.geonames.org/1941662/> ;
+        geo:lat                   "21.57944488525390625"^^xsd:float ;
+        geo:long                  "105.69388580322265625"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Núi_Cốc_Lake?oldid=1063480180&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Hồ_Núi_Cốc_01.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Nui_Coc_Lake2.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Nuicoc-lake-buddha&tourboats.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Nuicoc-lake-gateway.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Núi_Cốc_Lake ;
+        foaf:name                 "Núi Cốc Lake"@en .
+
+dbr:Thiền_Quang_Lake  rdf:type    dbo:Lake , yago:PhysicalEntity100001930 , dbo:Place , owl:Thing , yago:YagoPermanentlyLocatedEntity , dbo:BodyOfWater , yago:Lake109328904 , yago:BodyOfWater109225146 , schema:BodyOfWater , yago:Thing100002452 , dbo:NaturalPlace , geo:SpatialThing , schema:Place , yago:WikicatLakesOfHanoi , yago:YagoGeoEntity , dbo:Location ;
+        rdfs:comment              "Halais Lake is a lake in Hanoi, Vietnam, located next to Nguyễn Du Street, which used to be named \"Rue Halais\" under the French (1888-1945), hence the name \"Halais\". According to Vietnamese sources, it should be spelled \"Halais Lake\", the French name for the lake called \"Hồ Thiền Quang\" in Vietnamese."@en ;
+        rdfs:label                "Thiền Quang Lake"@en ;
+        dbo:abstract              "Halais Lake is a lake in Hanoi, Vietnam, located next to Nguyễn Du Street, which used to be named \"Rue Halais\" under the French (1888-1945), hence the name \"Halais\". According to Vietnamese sources, it should be spelled \"Halais Lake\", the French name for the lake called \"Hồ Thiền Quang\" in Vietnamese."@en ;
+        dbo:country               dbr:Vietnam ;
+        dbo:location              dbr:Hanoi ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Hồ_Thiền_Quang.jpg?width=300> ;
+        dbo:wikiPageID            15212264 ;
+        dbo:wikiPageLength        "1061"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    992841084 ;
+        dbo:wikiPageWikiLink      dbr:Vietnam , dbr:Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Lake ;
+        dbp:basinCountries        "Vietnam"@en ;
+        dbp:location              dbr:Hanoi ;
+        dbp:name                  "Halais Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Infobox_lake , dbr:Template:Coord , dbr:Template:Reflist ;
+        dbp:wordnet_type          ns18:synset-lake-noun-1 ;
+        dct:subject               dbr:Category:Lakes_of_Hanoi , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "21.018429 105.845543" ;
+        owl:sameAs                ns15:4uFMb , dbpedia-fr:Lac_Halais , wikidata:Q7349899 , <http://rdf.freebase.com/ns/m.03hm03r> , <http://vi.dbpedia.org/resource/Hồ_Thiền_Quang> , <http://ko.dbpedia.org/resource/티엔꽝호> ;
+        geo:lat                   "21.018428802490234375"^^xsd:float ;
+        geo:long                  "105.84554290771484375"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Thiền_Quang_Lake?oldid=992841084&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Hồ_Thiền_Quang.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Thiền_Quang_Lake ;
+        foaf:name                 ""@en , "Halais Lake"@en .
+
+dbr:Trị_An_Lake  rdfs:label     "Trị An Lake"@en ;
+        dbo:wikiPageID          38213053 ;
+        dbo:wikiPageLength      "127"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRedirects   dbr:Trị_An_Dam ;
+        dbo:wikiPageRevisionID  1063478614 ;
+        dbo:wikiPageWikiLink    dbr:Category:Geography_of_Đồng_Nai_province , dbr:Trị_An_Dam , dbr:Category:Lakes_of_Vietnam ;
+        dct:subject             dbr:Category:Lakes_of_Vietnam , dbr:Category:Geography_of_Đồng_Nai_province ;
+        prov:wasDerivedFrom     <http://en.wikipedia.org/wiki/Trị_An_Lake?oldid=1063478614&ns=0> ;
+        foaf:isPrimaryTopicOf   wikipedia-en:Trị_An_Lake .
+
+dbr:Hoàn_Kiếm_Lake  rdf:type      yago:YagoGeoEntity , geo:SpatialThing , owl:Thing , yago:WikicatLakesOfHanoi , yago:YagoPermanentlyLocatedEntity , yago:PhysicalEntity100001930 , dbo:BodyOfWater , dbo:Location , dbo:NaturalPlace , yago:Lake109328904 , schema:BodyOfWater , yago:WikicatLakesOfVietnam , yago:Thing100002452 , dbo:Place , dbo:Lake , yago:BodyOfWater109225146 , schema:Place ;
+        rdfs:comment              "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam."@en ;
+        rdfs:label                "Hoàn Kiếm Lake"@en ;
+        dbo:abstract              "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam. In the past, the lake was variously named \"Luc Thuy Lake\" (Vietnamese: Hồ Lục Thủy, meaning \"Green Water Lake\" - aptly named for the water's color) or \"Thuy Quan Lake\" (Vietnamese: Hồ Thủy Quân, meaning \"Mariner's Lake\"). The lake is one of the major scenic spots in the city and serves as a focal point for its public life."@en ;
+        dbo:alternativeName       "Sword Lake"@en ;
+        dbo:averageDepth          1.1999999999999999556 ;
+        dbo:country               dbr:Vietnam ;
+        dbo:location              dbr:Hoàn_Kiếm_district , dbr:Hanoi ;
+        dbo:maximumDepth          2.0 ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Thap_Rua.jpg?width=300> ;
+        dbo:wikiPageExternalLink  <https://vietnamdiscovery.com/hanoi/attractions/hoan-kiem-lake/> , <https://web.archive.org/web/20130912070249/http:/www.hanoilocalguide.com/hoan-kiem-lake/> , ns31:hoan-kiem-lake-hanoi-vietnam , <https://web.archive.org/web/20070205232439/http:/www.cnn.com/EARTH/9804/13/vietnam.turtles.ap/> , ns30:vietnam-tours-featuring-the-lake-of-the-restored-sword ;
+        dbo:wikiPageID            6793095 ;
+        dbo:wikiPageLength        "4863"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1065248375 ;
+        dbo:wikiPageWikiLink      dbr:Vietnam , dbr:Mongol_invasions_of_Vietnam , dbr:Lê_Lợi , dbr:Hanoi , dbr:Hoan_Kiem_turtle , dbr:Temple_of_the_Jade_Mountain , dbr:Turtle_Tower , dbr:Category:Tourist_attractions_in_Hanoi , dbr:Category:Lakes_of_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Fresh_water , dbr:Hectare , dbr:Trần_Hưng_Đạo , dbr:Ming_dynasty , dbr:Hoàn_Kiếm_district , <http://dbpedia.org/resource/Thuận_Thiên_(sword)> , dbr:Yangtze_giant_softshell_turtle ;
+        dbp:basinCountries        dbr:Vietnam ;
+        dbp:caption               "Turtle Tower  in the center of the lake"@en , "A panoramic view of the Hoan Kiem Lake by night."@en ;
+        dbp:height                150 ;
+        dbp:location              dbr:Hanoi , dbr:Hoàn_Kiếm_district ;
+        dbp:name                  "Hoàn Kiếm Lake"@en ;
+        dbp:otherName             "Sword Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Hanoi_Tourism , dbr:Template:Native_name , dbr:Template:Commons_category-inline , dbr:Template:Linktext , dbr:Template:Lang-vi-hantu , dbr:Template:For , dbr:Template:Unreferenced , dbr:Template:Short_description , dbr:Template:Infobox_body_of_water , dbr:Template:Coord , dbr:Template:Convert , dbr:Template:Authority_control , dbr:Template:Panorama ;
+        dbp:wordnet_type          ns18:synset-lake-noun-1 ;
+        dct:subject               dbr:Category:Tourist_attractions_in_Hanoi , dbr:Category:Lakes_of_Hanoi , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "21.02888888888889 105.8525" ;
+        owl:sameAs                ns15:Cm6e , <http://tr.dbpedia.org/resource/Hoan_Kiem_Gölü> , <http://viaf.org/viaf/246989301> , <http://ja.dbpedia.org/resource/ホアンキエム湖> , <http://id.dbpedia.org/resource/Danau_Hoàn_Kiếm> , <http://sws.geonames.org/7533603/> , dbpedia-sl:Hoan_Kiem , <http://sv.dbpedia.org/resource/Hoan_Kiem_(sjö)> , <http://cs.dbpedia.org/resource/Jezero_navráceného_meče> , <http://tt.dbpedia.org/resource/Һо_Һоан_Кием_(Кайтарылган_кылыч_күле)> , dbpedia-it:Lago_Hoan_Kiem , dbpedia-de:Hoan-Kiem-See , <http://rdf.freebase.com/ns/m.0gp65w> , <http://d-nb.info/gnd/7520629-8> , <http://vi.dbpedia.org/resource/Hồ_Hoàn_Kiếm> , dbpedia-eo:Lago_Hoan_Kiem , <http://ru.dbpedia.org/resource/Хоанкьем> , <http://th.dbpedia.org/resource/ทะเลสาบฮหว่านเกี๊ยม> , wikidata:Q1151254 , <http://zh.dbpedia.org/resource/还剑湖> , dbpedia-fr:Lac_Hoan_Kiem , <http://ko.dbpedia.org/resource/호안끼엠호> ;
+        geo:lat                   "21.028888702392578125"^^xsd:float ;
+        geo:long                  "105.85250091552734375"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Hoàn_Kiếm_Lake?oldid=1065248375&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Hoan_Kiem_Lake_night_panorama.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Thê_Húc_bridge_with_flags.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Thap_Rua.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/TurtleTower_HoanKiemLake_Hanoi.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Hoàn_Kiếm_Lake ;
+        foaf:name                 "Hoàn Kiếm Lake"@en .
+
+dbr:Yên_Lập_Lake  rdf:type        schema:BodyOfWater , yago:YagoPermanentlyLocatedEntity , yago:BodyOfWater109225146 , yago:YagoGeoEntity , dbo:NaturalPlace , dbo:Location , yago:WikicatLakesOfVietnam , yago:Lake109328904 , schema:Place , dbo:Place , dbo:Lake , owl:Thing , dbo:BodyOfWater , yago:Thing100002452 , yago:PhysicalEntity100001930 , geo:SpatialThing ;
+        rdfs:comment              "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
+        rdfs:label                "Yên Lập Lake"@en ;
+        dbo:abstract              "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
+        dbo:country               dbr:Vietnam ;
+        dbo:elevation             30.199999999999999289 ;
+        dbo:inflow                dbr:Míp_River ;
+        dbo:length                20000.0 ;
+        dbo:location              dbr:Hoành_Bồ_district ;
+        dbo:maximumDepth          30.0 ;
+        dbo:nearestCity           dbr:Quảng_Ninh_province ;
+        dbo:outflow               dbr:Yên_Lập_River ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Hoyenlap.jpg?width=300> ;
+        dbo:width                 500.0 ;
+        dbo:wikiPageID            31947550 ;
+        dbo:wikiPageLength        "1428"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063468803 ;
+        dbo:wikiPageWikiLink      dbr:Category:Landforms_of_Quảng_Ninh_province , dbr:Quảng_Ninh_province , dbr:Míp_River , dbr:Category:Lakes_of_Vietnam , dbr:Yên_Lập_River , dbr:Vietnam , dbr:Hoành_Bồ_district ;
+        dbp:basinCountries        dbr:Vietnam ;
+        dbp:caption               "Yên Lập Lake"@en ;
+        dbp:cities                dbr:Quảng_Ninh_province ;
+        dbp:inflow                dbr:Míp_River ;
+        dbp:islands               "Bàn Tay, Canh, Cua, Giáp Giới"@en ;
+        dbp:location              dbr:Hoành_Bồ_district ;
+        dbp:name                  "Yên Lập Lake"@en ;
+        dbp:outflow               dbr:Yên_Lập_River ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:pushpinMapAlt         "Location of Yên Lập Lake in Vietnam."@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Coord , dbr:Template:Infobox_lake , dbr:Template:Unreferenced , dbr:Template:QuangNinh-geo-stub , dbr:Template:Orphan , dbr:Template:Convert ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Quảng_Ninh_province ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "20.999734 106.913727" ;
+        owl:sameAs                <http://rdf.freebase.com/ns/m.0gvvl7z> , ns15:4vAKS , wikidata:Q7372745 , <http://vi.dbpedia.org/resource/Hồ_Yên_Lập> ;
+        geo:lat                   "20.999734878540039062"^^xsd:float ;
+        geo:long                  "106.913726806640625"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Yên_Lập_Lake?oldid=1063468803&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Hoyenlap.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Yên_Lập_Lake ;
+        foaf:name                 "Yên Lập Lake"@en .
+
+dbr:Tuyền_Lâm_Lake  rdf:type      yago:YagoGeoEntity , geo:SpatialThing , dbo:NaturalPlace , dbo:Place , yago:Thing100002452 , dbo:Lake , dbo:BodyOfWater , dbo:Location , yago:YagoPermanentlyLocatedEntity , owl:Thing , schema:Place , schema:BodyOfWater , yago:Lake109328904 , yago:WikicatLakesOfVietnam , yago:PhysicalEntity100001930 , yago:BodyOfWater109225146 ;
+        rdfs:comment              "Tuyền Lâm Lake (hồ Tuyền Lâm) is a man-made lake in Đà Lạt city, in Lâm Đồng Province, Vietnam. It is one of 21 National Tourism Areas. Trúc Lâm Temple can be reached by cable car."@en ;
+        rdfs:label                "Tuyền Lâm Lake"@en ;
+        dbo:abstract              "Tuyền Lâm Lake (hồ Tuyền Lâm) is a man-made lake in Đà Lạt city, in Lâm Đồng Province, Vietnam. It is one of 21 National Tourism Areas. Trúc Lâm Temple can be reached by cable car."@en ;
+        dbo:location              dbr:Lâm_Đồng_province , dbr:Vietnam ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Tuyen_Lam_Lake_01.jpg?width=300> ;
+        dbo:type                  dbr:Reservoir ;
+        dbo:wikiPageID            40807156 ;
+        dbo:wikiPageLength        "3007"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063479962 ;
+        dbo:wikiPageWikiLink      dbr:Category:Landforms_of_Lâm_Đồng_province , dbr:Reservoir , dbr:Category:Tourist_attractions_in_Lâm_Đồng_province , dbr:Tourism_in_Vietnam , dbr:Trúc_Lâm_Temple , dbr:Vietnam , dbr:Lâm_Đồng_province , dbr:Category:Lakes_of_Vietnam ;
+        dbp:caption               "Tuyền Lâm Lake"@en ;
+        dbp:location              dbr:Lâm_Đồng_province , dbr:Vietnam ;
+        dbp:name                  "Tuyền Lâm Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:pushpinMapAlt         "Location of the man-made lake in Vietnam."@en ;
+        dbp:type                  dbr:Reservoir ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Reflist , dbr:Template:LamDong-geo-stub , dbr:Template:Infobox_body_of_water , dbr:Template:Coord ;
+        dct:subject               dbr:Category:Tourist_attractions_in_Lâm_Đồng_province , dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Lâm_Đồng_province ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "11.893 108.425" ;
+        owl:sameAs                ns15:9m29 , wikidata:Q10772031 , <http://ko.dbpedia.org/resource/뚜옌럼호> , <http://vi.dbpedia.org/resource/Hồ_Tuyền_Lâm> , <http://rdf.freebase.com/ns/m.0yp4lfg> ;
+        geo:lat                   "11.892999649047851562"^^xsd:float ;
+        geo:long                  "108.4250030517578125"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Tuyền_Lâm_Lake?oldid=1063479962&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Tuyen_Lam_Lake_01.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Tuyền_Lâm_Lake ;
+        foaf:name                 "Tuyền Lâm Lake"@en .
+
+dbr:Turtle_Tower  rdf:type        yago:WikicatHistoricalSitesInHanoi , dbo:Building , yago:GeographicalArea108574314 , yago:Lake109328904 , yago:Object100002684 , yago:PhysicalEntity100001930 , yago:Region108630985 , yago:YagoPermanentlyLocatedEntity , yago:BodyOfWater109225146 , yago:WikicatLakesOfHanoi , yago:Tract108673395 , yago:YagoLegalActorGeo , yago:Thing100002452 , yago:Site108651247 , yago:YagoGeoEntity , yago:Location100027167 ;
+        rdfs:comment              "Turtle Tower (Vietnamese: Tháp Rùa / 塔𪛇), also called Tortoise Tower is a small tower in the middle of Hoan Kiem Lake (Sword Lake) in central Hanoi, Vietnam."@en ;
+        rdfs:label                "Turtle Tower"@en ;
+        dbo:abstract              "Turtle Tower (Vietnamese: Tháp Rùa / 塔𪛇), also called Tortoise Tower is a small tower in the middle of Hoan Kiem Lake (Sword Lake) in central Hanoi, Vietnam."@en ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Tháp_Rùa_5.jpg?width=300> ;
+        dbo:wikiPageExternalLink  <http://www.diadanh.net/index.php%3Foption=com_content&task=view&id=192273> , <https://archive.today/20120708173020/chimviet.free.fr/13/nds0053.htm> ;
+        dbo:wikiPageID            22784199 ;
+        dbo:wikiPageLength        "2835"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1058671585 ;
+        dbo:wikiPageWikiLink      dbr:French_Indochina , dbr:Trịnh_lords , dbr:Lê_Lợi , dbr:Hoan_Kiem_turtle , dbr:Hanoi , dbr:Vietnam , dbr:Category:Buildings_and_structures_in_Hanoi , dbr:File:Tháp_Rùa_3.jpg , dbr:Lê_dynasty , dbr:Category:Lakes_of_Hanoi , dbr:Hoàn_Kiếm_Lake , <http://dbpedia.org/resource/Thuận_Thiên_(sword)> , dbr:File:Tháp_Rùa_5.jpg , dbr:Category:Historical_sites_in_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Lê_Thánh_Tông , dbr:Nguyễn_lords ;
+        dbp:hn                    "塔𪛇"@en ;
+        dbp:v                     "Tháp Rùa"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Vie , dbr:Template:Commons_category-inline , dbr:Template:Hanoi_Tourism , dbr:Template:Reflist , dbr:Template:Expand_Vietnamese , dbr:Template:Coord , dbr:Template:Short_description ;
+        dct:subject               dbr:Category:Historical_sites_in_Hanoi , dbr:Category:Lakes_of_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Category:Buildings_and_structures_in_Hanoi ;
+        gold:hypernym             dbr:Tower ;
+        owl:sameAs                <http://vi.dbpedia.org/resource/Tháp_Rùa> , yago-res:Turtle_Tower , dbpedia-ca:Torre_de_la_Tortuga , dbpedia-fr:Tour_de_la_Tortue , <http://ko.dbpedia.org/resource/터틀_타워> , ns15:CGhH , <http://rdf.freebase.com/ns/m.05zv__b> , <http://zh.dbpedia.org/resource/龟塔> , <http://cs.dbpedia.org/resource/Želví_věž> , <http://sws.geonames.org/8556324/> , dbpedia-es:Torre_de_la_Tortuga , <http://el.dbpedia.org/resource/Πύργος_της_Χελώνας> , wikidata:Q1134533 , dbpedia-pt:Torre_da_Tartaruga , dbpedia-it:Torre_della_Tartaruga ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Turtle_Tower?oldid=1058671585&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Tháp_Rùa_3.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Tháp_Rùa_5.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Turtle_Tower .
+
+dbr:Cấm_Sơn_Lake  rdf:type        schema:Place , dbo:Lake , schema:BodyOfWater , yago:WikicatLakesOfVietnam , dbo:NaturalPlace , yago:BodyOfWater109225146 , yago:YagoGeoEntity , owl:Thing , dbo:Location , yago:PhysicalEntity100001930 , dbo:BodyOfWater , yago:YagoPermanentlyLocatedEntity , dbo:Place , yago:Lake109328904 , geo:SpatialThing , yago:Thing100002452 ;
+        rdfs:comment              "Cấm Sơn Lake (Vietnamese: Hồ Cấm Sơn) is a lake in Lục Ngạn District, Bắc Giang Province, Vietnam, near the border with Lạng Sơn Province. The lake lies off Highway 279, northeast of the city of Bắc Giang. The lake has an area of some 2,600 hectares (6,400 acres), but during the rainy season when flooding is common, the lake can expand to some 3,000 hectares (7,400 acres). The length of the lake is about 30 kilometres (19 mi). Its widest point is about 7 kilometres (4.3 mi) and narrowest point is about 200 metres (660 ft). \n* v \n* t \n* e"@en ;
+        rdfs:label                "Cấm Sơn Lake"@en ;
+        dbo:abstract              "Cấm Sơn Lake (Vietnamese: Hồ Cấm Sơn) is a lake in Lục Ngạn District, Bắc Giang Province, Vietnam, near the border with Lạng Sơn Province. The lake lies off Highway 279, northeast of the city of Bắc Giang. The lake has an area of some 2,600 hectares (6,400 acres), but during the rainy season when flooding is common, the lake can expand to some 3,000 hectares (7,400 acres). The length of the lake is about 30 kilometres (19 mi). Its widest point is about 7 kilometres (4.3 mi) and narrowest point is about 200 metres (660 ft). \n* v \n* t \n* e"@en ;
+        dbo:areaTotal             26000000.0 ;
+        dbo:length                30000.0 ;
+        dbo:location              dbr:Bắc_Giang_province , dbr:Lục_Ngạn_district , dbr:Vietnam ;
+        dbo:width                 7000.0 ;
+        dbo:wikiPageID            27879383 ;
+        dbo:wikiPageLength        "2821"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063467756 ;
+        dbo:wikiPageWikiLink      dbr:Vietnam , dbr:Bắc_Giang , dbr:Lạng_Sơn_province , dbr:Category:Landforms_of_Bắc_Giang_province , dbr:Category:Lakes_of_Vietnam , dbr:Lục_Ngạn_district , dbr:Bắc_Giang_province ;
+        dbp:location              dbr:Bắc_Giang_province , dbr:Vietnam , dbr:Lục_Ngạn_district ;
+        dbp:name                  "Cấm Sơn Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:pushpinMapAlt         "Location of lake in Vietnam."@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:BacGiang-geo-stub , dbr:Template:Infobox_body_of_water , dbr:Template:Coord , dbr:Template:Convert ;
+        dct:subject               dbr:Category:Landforms_of_Bắc_Giang_province , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "21.534444444444446 106.56444444444445" ;
+        owl:sameAs                ns15:4fAXK , wikidata:Q5024871 , <http://rdf.freebase.com/ns/m.0cc61b2> , <http://ko.dbpedia.org/resource/껌선호> , <http://vi.dbpedia.org/resource/Hồ_Cấm_Sơn> ;
+        geo:lat                   "21.534444808959960938"^^xsd:float ;
+        geo:long                  "106.56444549560546875"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Cấm_Sơn_Lake?oldid=1063467756&ns=0> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Cấm_Sơn_Lake ;
+        foaf:name                 "Cấm Sơn Lake"@en .
+
+dbr:Búng_Bình_Thiên  rdf:type     dbo:Location , dbo:Lake , yago:Thing100002452 , yago:Lake109328904 , yago:WikicatLakesOfVietnam , schema:Place , dbo:Place , yago:BodyOfWater109225146 , yago:YagoGeoEntity , geo:SpatialThing , schema:BodyOfWater , yago:YagoPermanentlyLocatedEntity , dbo:BodyOfWater , yago:PhysicalEntity100001930 , dbo:NaturalPlace , owl:Thing ;
+        rdfs:comment              "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
+        rdfs:label                "Búng Bình Thiên"@en ;
+        dbo:abstract              "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
+        dbo:location              dbr:An_Giang_province , dbr:An_Phú_district , dbr:Vietnam ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Búng_Bình_Thiên.jpg?width=300> ;
+        dbo:type                  dbr:Lake ;
+        dbo:wikiPageID            37312568 ;
+        dbo:wikiPageLength        "4790"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1074112832 ;
+        dbo:wikiPageWikiLink      dbr:An_Giang_province , dbr:Category:Mekong_Delta , dbr:Chams , dbr:Quốc_Thái , dbr:Bassac_River , dbr:Bình_Di_River , <http://dbpedia.org/resource/Nhơn_Hội,_An_Giang> , dbr:Lake , <http://dbpedia.org/resource/Khánh_Bình,_An_Giang> , dbr:Mekong_Delta , dbr:An_Phú_district , dbr:File:Thánh_đường_Hồi_giáo_Mas_Jid_Khoy_Ri_Yah.JPG , dbr:Category:Landforms_of_An_Giang_province , dbr:Vietnam , dbr:Category:Lakes_of_Vietnam ;
+        dbp:caption               "Búng Bình Thiên."@en ;
+        dbp:location              dbr:An_Phú_district , dbr:Vietnam , dbr:An_Giang_province ;
+        dbp:name                  "Búng Bình Thiên"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:pushpinMapAlt         "Location of the lake in Vietnam."@en ;
+        dbp:type                  dbr:Lake ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Multiple_issues , dbr:Template:Coord , dbr:Template:Citation_needed , dbr:Template:Advert , dbr:Template:Reflist , dbr:Template:Vietnam-stub , dbr:Template:Infobox_body_of_water , dbr:Template:No_footnotes ;
+        dct:subject               dbr:Category:Landforms_of_An_Giang_province , dbr:Category:Lakes_of_Vietnam , dbr:Category:Mekong_Delta ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "10.916666666666666 105.06666666666666" ;
+        owl:sameAs                <http://rdf.freebase.com/ns/m.0n5vx21> , ns15:4eN6H , <http://sws.geonames.org/1587761/> , <http://vi.dbpedia.org/resource/Búng_Bình_Thiên> , wikidata:Q5005252 ;
+        geo:lat                   "10.916666984558105469"^^xsd:float ;
+        geo:long                  "105.0666656494140625"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Búng_Bình_Thiên?oldid=1074112832&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Búng_Bình_Thiên.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Thánh_đường_Hồi_giáo_Mas_Jid_Khoy_Ri_Yah.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Búng_Bình_Thiên ;
+        foaf:name                 "Búng Bình Thiên"@en .
+
+dbr:Định_Bình_Lake  rdf:type      dbo:NaturalPlace , dbo:Location , yago:BodyOfWater109225146 , dbo:Place , schema:BodyOfWater , yago:YagoGeoEntity , dbo:BodyOfWater , yago:WikicatLakesOfVietnam , yago:PhysicalEntity100001930 , schema:Place , yago:Lake109328904 , dbo:Lake , geo:SpatialThing , yago:Thing100002452 , owl:Thing , yago:YagoPermanentlyLocatedEntity ;
+        rdfs:comment              "Định Bình Lake (Vietnamese: Hồ Định Bình) is a large artificial freshwater lake in Vĩnh Thạnh District, Bình Định Province, Vietnam. Work began creating the dam on Côn River in May 2003. It has a capacity of 226 million cubic metres. The lake and dam are expected to provide irrigation for some 12,545 hectares (over 48 square miles)."@en ;
+        rdfs:label                "Định Bình Lake"@en ;
+        dbo:abstract              "Định Bình Lake (Vietnamese: Hồ Định Bình) is a large artificial freshwater lake in Vĩnh Thạnh District, Bình Định Province, Vietnam. Work began creating the dam on Côn River in May 2003. It has a capacity of 226 million cubic metres. The lake and dam are expected to provide irrigation for some 12,545 hectares (over 48 square miles)."@en ;
+        dbo:country               dbr:Vietnam ;
+        dbo:inflow                dbr:Côn_River ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Hodinhbinh.jpg?width=300> ;
+        dbo:wikiPageID            27879300 ;
+        dbo:wikiPageLength        "1211"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063467869 ;
+        dbo:wikiPageWikiLink      <http://dbpedia.org/resource/Vĩnh_Thạnh_district,_Bình_Định> , dbr:Category:Lakes_of_Vietnam , dbr:Côn_River , dbr:Bình_Định_province , dbr:Category:Landforms_of_Bình_Định_province , dbr:Vietnam ;
+        dbp:basinCountries        dbr:Vietnam ;
+        dbp:caption               "Định Bình Lake"@en ;
+        dbp:cities                "Bình Định"@en ;
+        dbp:inflow                dbr:Côn_River ;
+        dbp:name                  "Định Bình Lake"@en ;
+        dbp:pushpinMap            "Vietnam#Southeast Asia"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Infobox_lake , dbr:Template:Coord , dbr:Template:BinhDinh-geo-stub , dbr:Template:Reflist ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Bình_Định_province ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "14.169444444444444 108.7611111111111" ;
+        owl:sameAs                ns15:4ieM1 , <http://rdf.freebase.com/ns/m.0cc8c0l> , wikidata:Q5278297 , <http://vi.dbpedia.org/resource/Hồ_Định_Bình> ;
+        geo:lat                   "14.169444084167480469"^^xsd:float ;
+        geo:long                  "108.7611083984375"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Định_Bình_Lake?oldid=1063467869&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Hodinhbinh.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Định_Bình_Lake ;
+        foaf:name                 "Định Bình Lake"@en .
+
+dbr:Trúc_Bạch_Lake  rdf:type      yago:YagoGeoEntity , schema:BodyOfWater , dbo:Lake , dbo:Place , schema:Place , owl:Thing , dbo:NaturalPlace , yago:Lake109328904 , yago:Thing100002452 , yago:WikicatLakesOfVietnam , yago:YagoPermanentlyLocatedEntity , geo:SpatialThing , yago:PhysicalEntity100001930 , dbo:Location , dbo:BodyOfWater , yago:BodyOfWater109225146 , yago:WikicatLakesOfHanoi ;
+        rdfs:comment              "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down."@en ;
+        rdfs:label                "Trúc Bạch Lake"@en ;
+        dbo:abstract              "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down. Trúc Bạch Lake is located northwest of Hanoi's Old Quarter, immediately adjacent to the eastern shore of the city's largest lake, the West Lake (Hồ Tây), a former branch of the Red River whose west bank is nearby. Trúc Bạch Lake was separated from the West Lake by the construction of a narrow dike (Cổ Ngư, \"reinforcement\") in the 17th century to allow raising fish. The inhabitants of the Truc Yen Village, located on the south shore of the newly formed lake, were in the business of making bamboo blinds and hence cultivated a small variety of bamboo. In 1957 and 1958, major Thanh Niên Road was built between the lakes. In 1730s, the Trịnh Lord Trịnh Giang had Trúc Lâm Palace constructed on the lake shore. The building first served as a pleasure palace but was later converted into a prison for royal concubines found guilty of crime. The silk they produced, known as \"Bamboo Village Silk\" became famous for its beauty. The lake front is open only along Thanh Niên Road, the other sides are occupied by houses and residential streets. The lake is among the most seriously polluted in Hanoi. Nearby historical sites include: Quán Thánh Temple to the southwest of the lake, Châu Long Pagoda to the east, An Trì Temple (dedicated to the worship of a hero from the war against the Chinese Yuan Dynasty) on Phó Đức Chính Street, and Cẩu Nhi temple on a small hill near the northern corner of the lake."@en ;
+        dbo:areaTotal             90000.0 ;
+        dbo:country               dbr:Vietnam ;
+        dbo:elevation             15.0 ;
+        dbo:length                400.0 ;
+        dbo:location              dbr:Hanoi ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Truc_Bach_Lake.jpg?width=300> ;
+        dbo:type                  dbr:Oxbow_lake ;
+        dbo:width                 300.0 ;
+        dbo:wikiPageExternalLink  <https://web.archive.org/web/20070927195306/http:/www.ruaf.org/files/econf2_backgroundpaper_tran_duc_vien.doc> , <https://web.archive.org/web/20070927184003/http:/www.thudo.hanoi.gov.vn/eco/jsp/longArticle.jsp%3FarticleID=90&language=2> ;
+        dbo:wikiPageID            9387082 ;
+        dbo:wikiPageLength        "5049"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1041628920 ;
+        dbo:wikiPageWikiLink      dbr:Vietnam_War , dbr:Early_life_and_military_career_of_John_McCain , dbr:Vietnam , dbr:Trịnh_lords , <http://dbpedia.org/resource/Red_River_(Asia)> , dbr:Trịnh_Giang , dbr:Category:Lakes_of_Hanoi , dbr:Microsoft_Word , dbr:Palace , dbr:Concubinage , dbr:Category:Lakes_of_Vietnam , dbr:Yuan_dynasty , dbr:Vietnamese_language , dbr:Hanoi , dbr:John_McCain , dbr:Silk , dbr:Category:Oxbow_lakes , <http://dbpedia.org/resource/West_Lake_(Hanoi)> , dbr:Levee , dbr:Capital_city , dbr:Oxbow_lake ;
+        dbp:area                  "ca"@en ;
+        dbp:basinCountries        "Vietnam"@en ;
+        dbp:elevation             "ca"@en ;
+        dbp:islands               "a  in the northwest"@en ;
+        dbp:length                "ca"@en ;
+        dbp:location              dbr:Hanoi ;
+        dbp:name                  "Trúc Bạch Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:quote                 "--10-26"^^xsd:gMonthDay , "station. This was one of ten aircraft shot down that same day''.\""@en , "John Sidney McCain. The US Navy Air Force Aviator"@en , "capital, Hanoi, the citizens and military caught Pilot"@en , "was flying aircraft A4, which crashed near Yen Phu power"@en ;
+        dbp:title                 "Monument text translates;"@en ;
+        dbp:type                  dbr:Oxbow_lake ;
+        dbp:width                 "ca"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Quote_box , dbr:Template:Hanoi_Tourism , dbr:Template:Convert , dbr:Template:Reflist , dbr:Template:Coord , dbr:Template:Infobox_lake , dbr:Template:Linktext ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Oxbow_lakes ;
+        gold:hypernym             dbr:Lakes ;
+        georss:point              "21.045555555555556 105.83805555555556" ;
+        owl:sameAs                wikidata:Q1320141 , <http://ko.dbpedia.org/resource/쭉박호> , <http://rdf.freebase.com/ns/m.0286v8r> , <http://zh.dbpedia.org/resource/竹帛湖> , dbpedia-fr:Lac_de_la_Soie_blanche , <http://vi.dbpedia.org/resource/Hồ_Trúc_Bạch> , dbpedia-es:Lago_Trúc_Bạch , <http://sws.geonames.org/1563780/> , ns15:LAz7 ;
+        geo:lat                   "21.04555511474609375"^^xsd:float ;
+        geo:long                  "105.8380584716796875"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Trúc_Bạch_Lake?oldid=1041628920&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/John_McCain_monument_at_Trúc_Bạch_Lake,_Hanoi,_VN_(text_detail).jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/John_McCain_monument_at_Trúc_Bạch_Lake,_Hanoi,_VN.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/John_McCain_monument_at_Trúc_Bạch_Lake,_Hanoi,_VN_(panoramic).jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Truc_Bach_Lake.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Trúc_Bạch_Lake ;
+        foaf:name                 "Trúc Bạch Lake"@en , ""@en .
+
+dbr:Bàu_Tró  rdf:type             dbo:Lake , yago:PhysicalEntity100001930 , schema:Place , owl:Thing , dbo:BodyOfWater , yago:YagoGeoEntity , yago:YagoPermanentlyLocatedEntity , schema:BodyOfWater , yago:BodyOfWater109225146 , geo:SpatialThing , dbo:Location , yago:Thing100002452 , yago:WikicatLakesOfVietnam , dbo:Place , yago:Lake109328904 , dbo:NaturalPlace ;
+        rdfs:comment              "Bàu Tró (Bàu in Vietnamese dialect means pond) is a lake in Đồng Hới city, Quảng Bình Province, Vietnam. This lake is an important fresh water supply for more than 130,000 inhabitants of Đồng Hới. Bàu Tró is better known for archaeological findings by French archaeologists during French Indochina periods. The artefacts found here dated back as far as 5,000 years ago, displaying important proof of human settlements in this area. \n* v \n* t \n* e"@en ;
+        rdfs:label                "Bàu Tró"@en ;
+        dbo:abstract              "Bàu Tró (Bàu in Vietnamese dialect means pond) is a lake in Đồng Hới city, Quảng Bình Province, Vietnam. This lake is an important fresh water supply for more than 130,000 inhabitants of Đồng Hới. Bàu Tró is better known for archaeological findings by French archaeologists during French Indochina periods. The artefacts found here dated back as far as 5,000 years ago, displaying important proof of human settlements in this area. \n* v \n* t \n* e"@en ;
+        dbo:country               dbr:Vietnam ;
+        dbo:location              dbr:Đồng_Hới , dbr:Quảng_Bình_province ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Bautro.jpg?width=300> ;
+        dbo:wikiPageID            11674298 ;
+        dbo:wikiPageLength        "1088"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063468672 ;
+        dbo:wikiPageWikiLink      dbr:Category:Lakes_of_Vietnam , dbr:Vietnam , dbr:French_Indochina , dbr:Đồng_Hới , dbr:Category:Landforms_of_Quảng_Bình_province , dbr:Quảng_Bình_province ;
+        dbp:basinCountries        "Vietnam"@en ;
+        dbp:caption               "Aerial view of Bàu Tró"@en ;
+        dbp:location              dbr:Quảng_Bình_province , dbr:Đồng_Hới ;
+        dbp:name                  "Bàu Tró"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Coord , dbr:Template:Infobox_lake , dbr:Template:Unreferenced , dbr:Template:Vietnam-stub , dbr:Template:Citation_needed ;
+        dbp:wordnet_type          ns18:synset-lake-noun-1 ;
+        dct:subject               dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Quảng_Bình_province ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "17.491389 106.622778" ;
+        owl:sameAs                ns15:4XENA , <http://vi.dbpedia.org/resource/Bàu_Tró> , wikidata:Q4873412 , <http://rdf.freebase.com/ns/m.02rnjsd> ;
+        geo:lat                   "17.491388320922851562"^^xsd:float ;
+        geo:long                  "106.62277984619140625"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Bàu_Tró?oldid=1063468672&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/Bautro.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Bàu_Tró ;
+        foaf:name                 ""@en , "Bàu Tró"@en .
+
+dbr:Ba_Bể_Lake  rdf:type          schema:Place , schema:BodyOfWater , yago:Tract108673395 , owl:Thing , yago:Location100027167 , yago:YagoPermanentlyLocatedEntity , yago:Thing100002452 , dbo:Place , yago:YagoLegalActorGeo , dbo:Location , dbo:BodyOfWater , yago:BodyOfWater109225146 , yago:Lake109328904 , yago:PhysicalEntity100001930 , yago:Region108630985 , yago:Object100002684 , yago:WikicatLakesOfVietnam , yago:Site108651247 , yago:WikicatRamsarSitesInVietnam , dbo:NaturalPlace , geo:SpatialThing , yago:GeographicalArea108574314 , yago:YagoGeoEntity , dbo:Lake ;
+        rdfs:comment              "Ba Bể Lake (Vietnamese: Hồ Ba Bể; Ba means Three, Bể is from the Tay language word pé, meaning \"lake\") is the largest natural lake in Vietnam. It is located in Nam Mẫu commune, Ba Bể district, Bắc Kạn Province in the Northeast region of the country. Ba Bể Lake is a featured geographical science and is a biodiversity reservoir. It is a part of the Ba Bể National Park. It is home to a range of animals and plants."@en ;
+        rdfs:label                "Ba Bể Lake"@en ;
+        dbo:abstract              "Ba Bể Lake (Vietnamese: Hồ Ba Bể; Ba means Three, Bể is from the Tay language word pé, meaning \"lake\") is the largest natural lake in Vietnam. It is located in Nam Mẫu commune, Ba Bể district, Bắc Kạn Province in the Northeast region of the country. Having been formed approximately 200 million years ago, the lake is surrounded by limestone cliffs, which in turn are covered by primary forests. The lake comprises three zones named Pé Lầm, Pé Lù, and Pé Lèng. Three rivers, named Năng, Tả Han, and Nam Cường, are the main inflows of the lake. The Năng river enters the lake through a large waterfall called Đầu Đẳng. In the lake there are also three islands, named Án Mã, Khẩu Cúm, and Po Gia Mải (literally \"Widow's Island\"). Ba Bể Lake is a featured geographical science and is a biodiversity reservoir. It is a part of the Ba Bể National Park. It is home to a range of animals and plants."@en ;
+        dbo:areaTotal             6500000.0 ;
+        dbo:country               dbr:Vietnam ;
+        dbo:elevation             145.0 ;
+        dbo:length                8000.0 ;
+        dbo:location              dbr:Bắc_Kạn_province ;
+        dbo:maximumDepth          29.0 ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/Babenp_2007_01_3.jpg?width=300> ;
+        dbo:wikiPageExternalLink  <https://whc.unesco.org/en/tentativelists/957/> ;
+        dbo:wikiPageID            13723896 ;
+        dbo:wikiPageLength        "2958"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1063467781 ;
+        dbo:wikiPageWikiLink      dbr:Bắc_Kạn_province , dbr:Waterfall , dbr:Category:Landforms_of_Bắc_Kạn_province , dbr:River , dbr:Biodiversity , dbr:Tai_languages , dbr:File:BacKan-HoBaBe_map.png , <http://dbpedia.org/resource/Northeast_(Vietnam)> , dbr:Category:Lakes_of_Vietnam , dbr:Vietnam , dbr:Old-growth_forest , dbr:Ba_Bể_National_Park , dbr:Category:Ramsar_sites_in_Vietnam ;
+        dbp:alt                   "A lake with islands and sides all covered in trees"@en ;
+        dbp:basinCountries        "Vietnam"@en ;
+        dbp:location              dbr:Bắc_Kạn_province ;
+        dbp:name                  "Ba Bể Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Vietnam-geo-stub , dbr:Template:Short_description , dbr:Template:Convert , dbr:Template:Commonscat-inline , dbr:Template:Coord , dbr:Template:Infobox_lake , dbr:Template:Reflist ;
+        dct:subject               dbr:Category:Landforms_of_Bắc_Kạn_province , dbr:Category:Ramsar_sites_in_Vietnam , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        georss:point              "22.416666666666668 105.61666666666666" ;
+        owl:sameAs                <http://ko.dbpedia.org/resource/바베호> , <http://rdf.freebase.com/ns/m.03cg8vy> , <http://lt.dbpedia.org/resource/Babė> , <http://ceb.dbpedia.org/resource/Hồ_Ba_Bể> , <http://vi.dbpedia.org/resource/Hồ_Ba_Bể> , dbpedia-de:Hồ_Ba_Bể , ns15:MCBy , <http://arz.dbpedia.org/resource/بحيره_با_ب> , wikidata:Q1328473 , <http://zh.dbpedia.org/resource/三海湖> , <http://sv.dbpedia.org/resource/Ba_Bể-sjön> , <http://sws.geonames.org/1591566/> ;
+        geo:lat                   "22.416666030883789062"^^xsd:float ;
+        geo:long                  "105.616668701171875"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Ba_Bể_Lake?oldid=1063467781&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/BacKan-HoBaBe_map.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Babenp_2007_01_3.jpg> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Ba_Bể_Lake ;
+        foaf:name                 "Ba Bể Lake"@en .
+
+dbr:Ayun_Hạ_Lake  rdf:type        dbo:BodyOfWater , dbo:Place , yago:Lake109328904 , dbo:NaturalPlace , yago:Thing100002452 , owl:Thing , yago:PhysicalEntity100001930 , yago:YagoPermanentlyLocatedEntity , schema:Place , dbo:Lake , yago:YagoGeoEntity , yago:BodyOfWater109225146 , dbo:Location , yago:WikicatLakesOfVietnam , schema:BodyOfWater ;
+        rdfs:comment              "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
+        rdfs:label                "Ayun Hạ Lake"@en ;
+        dbo:abstract              "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
+        dbo:length                25000.0 ;
+        dbo:location              dbr:Vietnam , dbr:Gia_Lai_province ;
+        dbo:width                 5000.0 ;
+        dbo:wikiPageID            27879221 ;
+        dbo:wikiPageLength        "2787"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1064666967 ;
+        dbo:wikiPageWikiLink      dbr:Gia_Lai_province , dbr:Vietnam , dbr:Category:Landforms_of_Gia_Lai_province , dbr:Category:Lakes_of_Vietnam ;
+        dbp:location              dbr:Gia_Lai_province , dbr:Vietnam ;
+        dbp:name                  "Ayun Ha Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:rivers                "Ayun River"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:GiaLai-geo-stub , dbr:Template:Convert , dbr:Template:Infobox_body_of_water , dbr:Template:Orphan , dbr:Template:Reflist , dbr:Template:Native_name , dbr:Template:WikidataCoord , dbr:Template:Start_date ;
+        dct:subject               dbr:Category:Landforms_of_Gia_Lai_province , dbr:Category:Lakes_of_Vietnam ;
+        gold:hypernym             dbr:Lake ;
+        owl:sameAs                wikidata:Q4831830 , ns15:4U3UD , <http://vi.dbpedia.org/resource/Hồ_Ayun_Hạ> , <http://rdf.freebase.com/ns/m.0cc5t32> ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/Ayun_Hạ_Lake?oldid=1064666967&ns=0> ;
+        foaf:isPrimaryTopicOf     wikipedia-en:Ayun_Hạ_Lake ;
+        foaf:name                 "Ayun Ha Lake"@en .
+
+<http://dbpedia.org/resource/West_Lake_(Hanoi)>
+        rdf:type                  schema:BodyOfWater , dbo:NaturalPlace , dbo:Place , dbo:Location , yago:Thing100002452 , yago:WikicatLakesOfVietnam , owl:Thing , schema:LakeBodyOfWater , geo:SpatialThing , yago:Lake109328904 , schema:Place , yago:WikicatLakesOfHanoi , yago:PhysicalEntity100001930 , yago:YagoGeoEntity , yago:BodyOfWater109225146 , dbo:Lake , wikidata:Q23397 , dbo:BodyOfWater , yago:YagoPermanentlyLocatedEntity ;
+        rdfs:comment              "West Lake (Vietnamese: Hồ Tây) is the biggest freshwater lake of Hanoi, Vietnam, located northwest of the city center. With a shore length of 17 km (about 10.6 miles) and 500 hectare (about 5 km2) in area, this is the largest lake of the capital and a popular place for recreation with many surrounding gardens, hotels and villas. A small part of West Lake is divided by to form Trúc Bạch Lake. Most of the lake is located within Tây Hồ District, named after the lake."@en ;
+        rdfs:label                "West Lake (Hanoi)"@en ;
+        ns22:shoreLength          "17.0"^^dbd:kilometre ;
+        dbo:abstract              "West Lake (Vietnamese: Hồ Tây) is the biggest freshwater lake of Hanoi, Vietnam, located northwest of the city center. With a shore length of 17 km (about 10.6 miles) and 500 hectare (about 5 km2) in area, this is the largest lake of the capital and a popular place for recreation with many surrounding gardens, hotels and villas. A small part of West Lake is divided by to form Trúc Bạch Lake. Most of the lake is located within Tây Hồ District, named after the lake."@en ;
+        dbo:country               dbr:Vietnam ;
+        dbo:location              dbr:Hanoi ;
+        dbo:shoreLength           17000.0 ;
+        dbo:thumbnail             <http://commons.wikimedia.org/wiki/Special:FilePath/West_Lake_(Hanoi).jpg?width=300> ;
+        dbo:type                  dbr:Fresh_water ;
+        dbo:wikiPageExternalLink  ns14:vietnam00agar ;
+        dbo:wikiPageID            14279397 ;
+        dbo:wikiPageLength        "3341"^^xsd:nonNegativeInteger ;
+        dbo:wikiPageRevisionID    1061936069 ;
+        dbo:wikiPageWikiLink      dbr:Secondary_school , dbr:Category:Tourist_attractions_in_Hanoi , dbr:Sino-Vietnamese_vocabulary , dbr:Fresh_water , <http://dbpedia.org/resource/Red_River_(Asia)> , dbr:Naming_taboo , dbr:Lạc_Long_Quân , dbr:Trúc_Bạch_Lake , dbr:Trấn_Quốc_Pagoda , dbr:Category:Lakes_of_Vietnam , <http://dbpedia.org/resource/Chu_Văn_An_High_School_(Hanoi)> , dbr:Lê_Thế_Tông , dbr:Tây_Hồ_district , dbr:Thanh_Nien_road , dbr:Quán_Thánh_Temple , dbr:Category:Lakes_of_Hanoi , dbr:Lý_Nam_Đế , dbr:Huli_jing , dbr:Four_Sacred_Temples , dbr:Expatriate , dbr:Category:Hong_River , dbr:Vietnam , dbr:Folklore , dbr:Hanoi ;
+        dbp:basinCountries        "Vietnam"@en ;
+        dbp:caption               "West Lake at dusk"@en ;
+        dbp:lakeType              "Freshwater lake"@en ;
+        dbp:location              dbr:Hanoi ;
+        dbp:name                  "West Lake"@en ;
+        dbp:pushpinMap            "Vietnam"@en ;
+        dbp:wikiPageUsesTemplate  dbr:Template:Hanoi_Tourism , dbr:Template:Authority_control , dbr:Template:Cite_book , dbr:Template:Expand_Vietnamese , dbr:Template:Convert , dbr:Template:Reflist , dbr:Template:Coord , dbr:Template:Infobox_body_of_water ;
+        dbp:wordnet_type          ns18:synset-lake-noun-1 ;
+        dct:subject               dbr:Category:Tourist_attractions_in_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Hong_River ;
+        gold:hypernym             dbr:Lake ;
+        schema:sameAs             <http://viaf.org/viaf/242771039> ;
+        georss:point              "21.055 105.82" ;
+        owl:sameAs                <http://vi.dbpedia.org/resource/Hồ_Tây> , wikidata:Q1187394 , <http://uk.dbpedia.org/resource/Тей_(озеро)> , <http://rdf.freebase.com/ns/m.03c_2x5> , <http://de.dbpedia.org/resource/Westsee_(Hanoi)> , <http://d-nb.info/gnd/7563649-9> , <http://ru.dbpedia.org/resource/Тэй_(озеро)> , <http://fr.dbpedia.org/resource/Lac_de_l'Ouest_(Hanoï)> , <http://yago-knowledge.org/resource/West_Lake_(Hanoi)> , <http://ko.dbpedia.org/resource/떠이호> , <http://es.dbpedia.org/resource/Lago_Tay_(Vietnam)> , <http://it.dbpedia.org/resource/Lago_dell'Ovest_(Vietnam)> , ns15:Ea3J , <http://zh.dbpedia.org/resource/西湖_(河内)> , <http://viaf.org/viaf/242771039> ;
+        geo:lat                   "21.05500030517578125"^^xsd:float ;
+        geo:long                  "105.81999969482421875"^^xsd:float ;
+        prov:wasDerivedFrom       <http://en.wikipedia.org/wiki/West_Lake_(Hanoi)?oldid=1061936069&ns=0> ;
+        foaf:depiction            <http://commons.wikimedia.org/wiki/Special:FilePath/West_Lake_(Hanoi).jpg> ;
+        foaf:isPrimaryTopicOf     <http://en.wikipedia.org/wiki/West_Lake_(Hanoi)> ;
+        foaf:name                 "West Lake"@en .

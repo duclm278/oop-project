@@ -1,0 +1,53 @@
+Thanh: 
+    AutoPrefix:
+        public static String addPrefixes(String query)
+
+    Processing:
+        public static String readContent(String fileName)
+        public static Model execute(String query)
+        public static void deleteTempFile(String fileName)
+        public static void writeContent(String fileName, Model model)
+
+    QueryByCity - Abstract
+        QueryByHanoi
+        QueryByDaNang
+        QueryByHue
+        QueryByHCM
+
+Duc:
+    public interface QueryGeo():
+        public String getGeoInfo()   // geo:lat, geo:long, country
+        
+    public interface QueryDate():
+        public String getDateInfo()  // openingDate, startDate
+
+    QueryBy - Abstract
+    QueryByLake
+    QueryByProvince
+    QueryByFestival
+
+Phuong:
+    QueryByVenue
+    QueryByGarden
+    QueryByPagoda
+    QueryByPark
+    QueryByProtectedArea
+    QueryByReligiousBuilding
+    QueryByCave
+    QueryBySquare
+    QueryByWaterfall
+
+Huy:
+GUI:
+    ArrayList<QueryByCity> objs = new ...
+    objs.add(new QueryByHanoi)
+    objs.add(new QueryByDaNag)
+    objs.add(new QueryByHCM)
+
+    for obj : objs
+        query = obj.getQueryStr();
+        Model modelResult = Processing.execute(query);
+        Processing.writeContent(fileName, modelResult);
+        
+    QueryByLandmark
+    QueryByMuseum
