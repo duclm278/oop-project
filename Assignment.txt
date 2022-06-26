@@ -16,10 +16,10 @@ Thanh:
 
 Duc:
     public interface QueryGeo():
-        public String getGeoInfo()   // geo:lat, geo:long, country
+        public String getGeoInfo()   // geo:lat, geo:long, country, ...
         
     public interface QueryDate():
-        public String getDateInfo()  // openingDate, startDate
+        public String getDateInfo()  // openingDate, startDate, ...
 
     QueryBy - Abstract
     QueryByLake
