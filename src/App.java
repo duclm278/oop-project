@@ -15,14 +15,14 @@ public class App {
         /*
          * Online request to get raw data
          */
-        String queryInitStr = queryObj.getRawStr();
-        queryInitStr = AutoPrefix.addPrefix(queryInitStr);
-        System.out.println(queryInitStr);
+        String onlineQueryStr = queryObj.getOnlineQueryStr();
+        onlineQueryStr = AutoPrefix.addPrefix(onlineQueryStr);
+        System.out.println(onlineQueryStr);
 
-        Query queryInit = QueryFactory.create(queryInitStr);
+        Query onlineQuery = QueryFactory.create(onlineQueryStr);
         try (QueryExecution qExec = QueryExecutionHTTP.create()
                 .endpoint("http://dbpedia.org/sparql")
-                .query(queryInit)
+                .query(onlineQuery)
                 .param("timeout", "300000") // 5 minutes
                 .build()) {
 
@@ -38,16 +38,16 @@ public class App {
         System.out.println("--------------------------------------------------");
         System.out.println("--------------------------------------------------");
 
-        // /*
-        //  * Offline request to get actual data
-        //  */
-        String queryStr = queryObj.getQueryStr();
-        queryStr = AutoPrefix.addPrefix(queryStr);
-        System.out.println(queryStr);
+        /*
+         * Offline request to get actual data
+         */
+        String offlineQueryStr = queryObj.getOfflineQueryStr();
+        offlineQueryStr = AutoPrefix.addPrefix(offlineQueryStr);
+        System.out.println(offlineQueryStr);
 
-        Query query= QueryFactory.create(queryStr);
+        Query offlineQuery= QueryFactory.create(offlineQueryStr);
         Model inModel = RDFDataMgr.loadModel(outName + "_tmp.ttl") ;
-        try(QueryExecution qExec = QueryExecutionFactory.create(query, inModel)) {
+        try(QueryExecution qExec = QueryExecutionFactory.create(offlineQuery, inModel)) {
             Model outModel = qExec.execConstruct();
             OutputStream outStream = new FileOutputStream(outName + ".ttl", false);
             RDFDataMgr.write(outStream, outModel, RDFFormat.TURTLE);

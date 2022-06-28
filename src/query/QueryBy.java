@@ -19,16 +19,16 @@ public abstract class QueryBy {
 
     public abstract String getPagesByTopic();
 
-    public abstract String getQueryStr();
+    public abstract String getOfflineQueryStr();
 
-    public String getRawStr() {
+    public String getOnlineQueryStr() {
         String QuerySet = "CONSTRUCT {" + "\n" +
                           "?s ?p ?o" + "\n" +
                           "} WHERE {" + " \n" +
                           getPagesByTopic() + "\n" +
                           "?s ?p ?o" + "\n" +
-                          "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))" +
-                          "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" +
+                          "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))" + "\n" +
+                          "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" + "\n" +
                           "}";
         return QuerySet;
     }

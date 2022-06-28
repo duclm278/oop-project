@@ -1,8 +1,6 @@
 package query;
 
-import java.util.ArrayList;
-
-public class QueryByLake extends QueryBy implements QueryGeo {
+public class QueryByLake extends QueryByPlace {
     private String name;
     private String length;
     private String shoreLength;
@@ -11,7 +9,6 @@ public class QueryByLake extends QueryBy implements QueryGeo {
     private String inflow;
     private String outflow;
     private String lakeType;
-    private ArrayList<String> geoList;
 
     public QueryByLake() {
         super();
@@ -23,10 +20,6 @@ public class QueryByLake extends QueryBy implements QueryGeo {
         inflow         = "?s dbp:inflow ?inflow.";
         outflow        = "?s dbp:outflow ?outflow.";
         lakeType       = "?s dbp:lakeType ?lakeType.";
-        geoList        = new ArrayList<>();
-        geoList.add("?s geo:lat ?geoLat.");
-        geoList.add("?s geo:long ?geoLong.");
-        geoList.add("?s georss:point ?geoPoint.");
     }
 
     @Override
@@ -40,7 +33,7 @@ public class QueryByLake extends QueryBy implements QueryGeo {
     }
 
     @Override
-    public String getQueryStr() {
+    public String getOfflineQueryStr() {
         String QueryStr = "CONSTRUCT {" + "\n" +
                           getType() + "\n" +
                           getSubjectOf() + "\n" +
@@ -58,7 +51,7 @@ public class QueryByLake extends QueryBy implements QueryGeo {
                           getLakeType() + "\n" +
 
                           // Get geo block
-                          getGeoBlock() + "\n" +
+                          joinGeoBlock(getGeoList()) + "\n" +
 
                           "} WHERE {" + " \n" +
                           getPagesByTopic() + "\n" +
@@ -79,28 +72,10 @@ public class QueryByLake extends QueryBy implements QueryGeo {
                           "OPTIONAL {" + getLakeType() + "}\n" +
 
                           // Get optional geo block
-                          getOptGeoBlock() + "\n" +
+                          joinOptGeoBlock(getGeoList()) + "\n" +
+
                           "}";
         return QueryStr;
-    }
-
-    @Override
-    public String getGeoBlock() {
-        String geoInfo = String.join("\n", geoList);
-        return geoInfo;
-    }
-
-    @Override
-    public String getOptGeoBlock() {
-        ArrayList<String> optGeoList = new ArrayList<>();
-
-        // Add OPTIONAL command to each item
-        for (String geoItem : geoList) {
-            optGeoList.add("OPTIONAL {" + geoItem + "}");
-        }
-
-        String optGeoInfo = String.join("\n", optGeoList);
-        return optGeoInfo;
     }
 
     public String getName() {

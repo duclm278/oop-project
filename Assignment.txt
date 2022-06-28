@@ -15,13 +15,12 @@ Thanh:
         QueryByHCM
 
 Duc:
-    public interface QueryGeo():
-        public String getGeoInfo()   // geo:lat, geo:long, country, ...
+    public interface QueryGeo(); // geo:lat, geo:long, country, ...
         
-    public interface QueryDate():
-        public String getDateInfo()  // openingDate, startDate, ...
+    public interface QueryDate(); // openingDate, startDate, ...
 
     QueryBy - Abstract
+    QueryByPlace - Abstract
     QueryByLake
     QueryByProvince
     QueryByFestival
@@ -41,8 +40,8 @@ Huy:
 GUI:
     ArrayList<QueryByCity> objs = new ...
     objs.add(new QueryByHanoi)
-    objs.add(new QueryByDaNag)
-    objs.add(new QueryByHCM)
+    objs.add(new QueryByDaNang)
+    objs.add(new QueryByHoChiMinh)
 
     for obj : objs
         query = obj.getQueryStr();
