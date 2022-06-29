@@ -54,8 +54,6 @@ public class QueryByLake extends QueryByPlace {
                           joinGeoBlock(getGeoList()) + "\n" +
 
                           "} WHERE {" + " \n" +
-                          getPagesByTopic() + "\n" +
-
                           "OPTIONAL {" + getType() + "}\n" +
                           "OPTIONAL {" + getSubjectOf() + "}\n" +
                           "OPTIONAL {" + getLabel() + "}\n" +

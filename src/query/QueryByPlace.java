@@ -11,6 +11,9 @@ public abstract class QueryByPlace extends QueryBy implements QueryGeo {
         geoList.add("?s geo:lat ?geoLat.");
         geoList.add("?s geo:long ?geoLong.");
         geoList.add("?s georss:point ?geoPoint.");
+        geoList.add("?s dbp:location ?location.");
+        geoList.add("?s dbp:locationCity ?locationCity.");
+        geoList.add("?s dbp:locationCountry ?locationCountry.");
     }
 
     @Override
