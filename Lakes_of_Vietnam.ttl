@@ -111,6 +111,7 @@ dbr:Yên_Lập_Lake  rdf:type  dbo:Place , yago:Thing100002452 , yago:Lake109328
         rdfs:comment        "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
         rdfs:label          "Yên Lập Lake"@en ;
         dbo:abstract        "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
+        dbo:length          20000.0 ;
         dbp:basinCountries  dbr:Vietnam ;
         dbp:inflow          dbr:Míp_River ;
         dbp:location        dbr:Hoành_Bồ_district ;
@@ -138,6 +139,7 @@ dbr:Trúc_Bạch_Lake  rdf:type  yago:WikicatLakesOfVietnam , owl:Thing , geo:Sp
         rdfs:label          "Trúc Bạch Lake"@en ;
         dbo:abstract        "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down. Trúc Bạch Lake is located northwest of Hanoi's Old Quarter, immediately adjacent to the eastern shore of the city's largest lake, the West Lake (Hồ Tây), a former branch of the Red River whose west bank is nearby. Trúc Bạch Lake was separated from the West Lake by the construction of a narrow dike (Cổ Ngư, \"reinforcement\") in the 17th century to allow raising fish. The inhabitants of the Truc Yen Village, located on the south shore of the newly formed lake, were in the business of making bamboo blinds and hence cultivated a small variety of bamboo. In 1957 and 1958, major Thanh Niên Road was built between the lakes. In 1730s, the Trịnh Lord Trịnh Giang had Trúc Lâm Palace constructed on the lake shore. The building first served as a pleasure palace but was later converted into a prison for royal concubines found guilty of crime. The silk they produced, known as \"Bamboo Village Silk\" became famous for its beauty. The lake front is open only along Thanh Niên Road, the other sides are occupied by houses and residential streets. The lake is among the most seriously polluted in Hanoi. Nearby historical sites include: Quán Thánh Temple to the southwest of the lake, Châu Long Pagoda to the east, An Trì Temple (dedicated to the worship of a hero from the war against the Chinese Yuan Dynasty) on Phó Đức Chính Street, and Cẩu Nhi temple on a small hill near the northern corner of the lake."@en ;
         dbo:areaTotal       90000.0 ;
+        dbo:length          400.0 ;
         dbp:basinCountries  "Vietnam"@en ;
         dbp:location        dbr:Hanoi ;
         dbp:name            "Trúc Bạch Lake"@en ;
@@ -169,6 +171,7 @@ dbr:Cấm_Sơn_Lake  rdf:type  yago:Thing100002452 , owl:Thing , yago:WikicatLak
         rdfs:label     "Cấm Sơn Lake"@en ;
         dbo:abstract   "Cấm Sơn Lake (Vietnamese: Hồ Cấm Sơn) is a lake in Lục Ngạn District, Bắc Giang Province, Vietnam, near the border with Lạng Sơn Province. The lake lies off Highway 279, northeast of the city of Bắc Giang. The lake has an area of some 2,600 hectares (6,400 acres), but during the rainy season when flooding is common, the lake can expand to some 3,000 hectares (7,400 acres). The length of the lake is about 30 kilometres (19 mi). Its widest point is about 7 kilometres (4.3 mi) and narrowest point is about 200 metres (660 ft). \n* v \n* t \n* e"@en ;
         dbo:areaTotal  26000000.0 ;
+        dbo:length     30000.0 ;
         dbp:location   dbr:Vietnam , dbr:Bắc_Giang_province , dbr:Lục_Ngạn_district ;
         dbp:name       "Cấm Sơn Lake"@en ;
         dct:subject    dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Bắc_Giang_province ;
@@ -193,6 +196,7 @@ dbr:Ba_Bể_Lake  rdf:type    dbo:Location , yago:YagoLegalActorGeo , owl:Thing 
         rdfs:label          "Ba Bể Lake"@en ;
         dbo:abstract        "Ba Bể Lake (Vietnamese: Hồ Ba Bể; Ba means Three, Bể is from the Tay language word pé, meaning \"lake\") is the largest natural lake in Vietnam. It is located in Nam Mẫu commune, Ba Bể district, Bắc Kạn Province in the Northeast region of the country. Having been formed approximately 200 million years ago, the lake is surrounded by limestone cliffs, which in turn are covered by primary forests. The lake comprises three zones named Pé Lầm, Pé Lù, and Pé Lèng. Three rivers, named Năng, Tả Han, and Nam Cường, are the main inflows of the lake. The Năng river enters the lake through a large waterfall called Đầu Đẳng. In the lake there are also three islands, named Án Mã, Khẩu Cúm, and Po Gia Mải (literally \"Widow's Island\"). Ba Bể Lake is a featured geographical science and is a biodiversity reservoir. It is a part of the Ba Bể National Park. It is home to a range of animals and plants."@en ;
         dbo:areaTotal       6500000.0 ;
+        dbo:length          8000.0 ;
         dbp:basinCountries  "Vietnam"@en ;
         dbp:location        dbr:Bắc_Kạn_province ;
         dbp:name            "Ba Bể Lake"@en ;
@@ -205,6 +209,7 @@ dbr:Ayun_Hạ_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , schema:BodyOfW
         rdfs:comment  "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
         rdfs:label    "Ayun Hạ Lake"@en ;
         dbo:abstract  "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
+        dbo:length    25000.0 ;
         dbp:location  dbr:Gia_Lai_province , dbr:Vietnam ;
         dbp:name      "Ayun Ha Lake"@en ;
         dct:subject   dbr:Category:Landforms_of_Gia_Lai_province , dbr:Category:Lakes_of_Vietnam .

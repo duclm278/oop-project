@@ -2,16 +2,12 @@ package query;
 
 import java.util.ArrayList;
 
-public abstract class QueryBy {
+public abstract class QueryBy implements QueryCore {
     private ArrayList<String> infoList;
 
     public QueryBy() {
         infoList = new ArrayList<>();
-        infoList.add("?s rdf:type ?type.");
-        infoList.add("?s dct:subject ?subject.");
-        infoList.add("?s rdfs:label ?label.");
-        infoList.add("?s dbo:abstract ?abstract.");
-        infoList.add("?s rdfs:comment ?comment.");
+        addCoreInfo2List(infoList);
     }
 
     public abstract String getOutName();
