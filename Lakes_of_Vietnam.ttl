@@ -35,10 +35,11 @@
 @prefix yago:         <http://dbpedia.org/class/yago/> .
 @prefix yago-res:     <http://yago-knowledge.org/resource/> .
 
-dbr:Thác_Bà_Lake  rdf:type  yago:PhysicalEntity100001930 , geo:SpatialThing , dbo:BodyOfWater , yago:YagoPermanentlyLocatedEntity , owl:Thing , dbo:Location , yago:Thing100002452 , yago:YagoGeoEntity , dbo:Place , schema:BodyOfWater , yago:WikicatLakesOfVietnam , dbo:Lake , dbo:NaturalPlace , yago:BodyOfWater109225146 , schema:Place , yago:Lake109328904 ;
+dbr:Thác_Bà_Lake  rdf:type  yago:PhysicalEntity100001930 , geo:SpatialThing , dbo:BodyOfWater , yago:YagoPermanentlyLocatedEntity , dbo:Location , owl:Thing , yago:Thing100002452 , yago:YagoGeoEntity , dbo:Place , schema:BodyOfWater , yago:WikicatLakesOfVietnam , dbo:Lake , dbo:NaturalPlace , yago:BodyOfWater109225146 , schema:Place , yago:Lake109328904 ;
         rdfs:comment  "The Thác Bà Lake (Vietnamese: Hồ Thác Bà) is a manmade lake in Yên Bái Province, Vietnam created by construction of the in the 1960s. Thác Bà is the name of the which pre-existed the dam (cf. Vietnamese: thác nước, waterfall)."@en ;
         rdfs:label    "Thác Bà Lake"@en ;
         dbo:abstract  "The Thác Bà Lake (Vietnamese: Hồ Thác Bà) is a manmade lake in Yên Bái Province, Vietnam created by construction of the in the 1960s. Thác Bà is the name of the which pre-existed the dam (cf. Vietnamese: thác nước, waterfall)."@en ;
+        dbp:location  dbr:Vietnam ;
         dbp:name      "Thác Bà Lake"@en ;
         dct:subject   dbr:Category:Lakes_of_Vietnam ;
         georss:point  "21.727521 105.021495" ;
@@ -52,6 +53,7 @@ dbr:Phú_Ninh_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , wikidata:Q2339
         dbo:areaTotal       34330000.0 ;
         dbp:basinCountries  dbr:Vietnam ;
         dbp:lakeType        dbr:Reservoir ;
+        dbp:location        "Phú Ninh District, Quảng Nam"@en ;
         dbp:name            "Phú Ninh"@en ;
         dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Quảng_Nam_province ;
         georss:point        "15.485277777777778 108.45722222222223" ;
@@ -71,36 +73,47 @@ dbr:Núi_Cốc_Lake  rdf:type  dbo:Location , yago:YagoPermanentlyLocatedEntity 
         geo:lat             "21.57944488525390625"^^xsd:float ;
         geo:long            "105.69388580322265625"^^xsd:float .
 
-dbr:Thiền_Quang_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , yago:WikicatLakesOfHanoi , schema:BodyOfWater , dbo:NaturalPlace , yago:PhysicalEntity100001930 , yago:BodyOfWater109225146 , yago:Thing100002452 , schema:Place , yago:Lake109328904 , dbo:BodyOfWater , dbo:Lake , dbo:Location , geo:SpatialThing , owl:Thing , dbo:Place ;
+dbr:Thiền_Quang_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , schema:BodyOfWater , yago:WikicatLakesOfHanoi , dbo:NaturalPlace , yago:PhysicalEntity100001930 , yago:BodyOfWater109225146 , yago:Thing100002452 , schema:Place , yago:Lake109328904 , dbo:BodyOfWater , dbo:Lake , dbo:Place , geo:SpatialThing , owl:Thing , dbo:Location ;
         rdfs:comment        "Halais Lake is a lake in Hanoi, Vietnam, located next to Nguyễn Du Street, which used to be named \"Rue Halais\" under the French (1888-1945), hence the name \"Halais\". According to Vietnamese sources, it should be spelled \"Halais Lake\", the French name for the lake called \"Hồ Thiền Quang\" in Vietnamese."@en ;
         rdfs:label          "Thiền Quang Lake"@en ;
         dbo:abstract        "Halais Lake is a lake in Hanoi, Vietnam, located next to Nguyễn Du Street, which used to be named \"Rue Halais\" under the French (1888-1945), hence the name \"Halais\". According to Vietnamese sources, it should be spelled \"Halais Lake\", the French name for the lake called \"Hồ Thiền Quang\" in Vietnamese."@en ;
         dbp:basinCountries  "Vietnam"@en ;
+        dbp:location        dbr:Hanoi ;
         dbp:name            "Halais Lake"@en ;
         dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi ;
         georss:point        "21.018429 105.845543" ;
         geo:lat             "21.018428802490234375"^^xsd:float ;
         geo:long            "105.84554290771484375"^^xsd:float .
 
-dbr:Trị_An_Lake  rdfs:label  "Trị An Lake"@en ;
-        dct:subject  dbr:Category:Geography_of_Đồng_Nai_province , dbr:Category:Lakes_of_Vietnam .
-
-dbr:Tuyền_Lâm_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , owl:Thing , dbo:Place , yago:PhysicalEntity100001930 , schema:BodyOfWater , schema:Place , yago:BodyOfWater109225146 , yago:YagoGeoEntity , dbo:Location , dbo:BodyOfWater , geo:SpatialThing , yago:WikicatLakesOfVietnam , yago:Thing100002452 , dbo:NaturalPlace , dbo:Lake , yago:Lake109328904 ;
+dbr:Tuyền_Lâm_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , owl:Thing , dbo:Place , schema:BodyOfWater , yago:PhysicalEntity100001930 , schema:Place , yago:BodyOfWater109225146 , yago:YagoGeoEntity , dbo:Location , dbo:BodyOfWater , geo:SpatialThing , yago:WikicatLakesOfVietnam , yago:Thing100002452 , dbo:NaturalPlace , dbo:Lake , yago:Lake109328904 ;
         rdfs:comment  "Tuyền Lâm Lake (hồ Tuyền Lâm) is a man-made lake in Đà Lạt city, in Lâm Đồng Province, Vietnam. It is one of 21 National Tourism Areas. Trúc Lâm Temple can be reached by cable car."@en ;
         rdfs:label    "Tuyền Lâm Lake"@en ;
         dbo:abstract  "Tuyền Lâm Lake (hồ Tuyền Lâm) is a man-made lake in Đà Lạt city, in Lâm Đồng Province, Vietnam. It is one of 21 National Tourism Areas. Trúc Lâm Temple can be reached by cable car."@en ;
+        dbp:location  dbr:Vietnam , dbr:Lâm_Đồng_province ;
         dbp:name      "Tuyền Lâm Lake"@en ;
         dct:subject   dbr:Category:Tourist_attractions_in_Lâm_Đồng_province , dbr:Category:Landforms_of_Lâm_Đồng_province , dbr:Category:Lakes_of_Vietnam ;
         georss:point  "11.893 108.425" ;
         geo:lat       "11.892999649047851562"^^xsd:float ;
         geo:long      "108.4250030517578125"^^xsd:float .
 
-dbr:Yên_Lập_Lake  rdf:type  dbo:Place , yago:Thing100002452 , yago:Lake109328904 , schema:Place , owl:Thing , yago:PhysicalEntity100001930 , dbo:BodyOfWater , dbo:NaturalPlace , yago:YagoGeoEntity , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , schema:BodyOfWater , yago:WikicatLakesOfVietnam , geo:SpatialThing , dbo:Lake , dbo:Location ;
+dbr:Búng_Bình_Thiên  rdf:type  dbo:Lake , dbo:Location , yago:PhysicalEntity100001930 , dbo:NaturalPlace , schema:BodyOfWater , yago:Lake109328904 , dbo:BodyOfWater , owl:Thing , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , yago:Thing100002452 , dbo:Place , yago:WikicatLakesOfVietnam , geo:SpatialThing , schema:Place ;
+        rdfs:comment  "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
+        rdfs:label    "Búng Bình Thiên"@en ;
+        dbo:abstract  "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
+        dbp:location  dbr:An_Giang_province , dbr:Vietnam , dbr:An_Phú_district ;
+        dbp:name      "Búng Bình Thiên"@en ;
+        dct:subject   dbr:Category:Mekong_Delta , dbr:Category:Landforms_of_An_Giang_province , dbr:Category:Lakes_of_Vietnam ;
+        georss:point  "10.916666666666666 105.06666666666666" ;
+        geo:lat       "10.916666984558105469"^^xsd:float ;
+        geo:long      "105.0666656494140625"^^xsd:float .
+
+dbr:Yên_Lập_Lake  rdf:type  dbo:Place , yago:Thing100002452 , yago:Lake109328904 , schema:Place , owl:Thing , yago:PhysicalEntity100001930 , dbo:BodyOfWater , dbo:NaturalPlace , yago:BodyOfWater109225146 , schema:BodyOfWater , yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , yago:WikicatLakesOfVietnam , geo:SpatialThing , dbo:Lake , dbo:Location ;
         rdfs:comment        "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
         rdfs:label          "Yên Lập Lake"@en ;
         dbo:abstract        "Yên Lập Lake (Vietnamese: Hồ Yên Lập) is a large artificial freshwater lake in Hoành Bồ District, Quảng Ninh Province, Vietnam. Work began creating the dam on and in 1978. It has a capacity of 128 million cubic metres. \n* v \n* t \n* e"@en ;
         dbp:basinCountries  dbr:Vietnam ;
         dbp:inflow          dbr:Míp_River ;
+        dbp:location        dbr:Hoành_Bồ_district ;
         dbp:name            "Yên Lập Lake"@en ;
         dbp:outflow         dbr:Yên_Lập_River ;
         dct:subject         dbr:Category:Landforms_of_Quảng_Ninh_province , dbr:Category:Lakes_of_Vietnam ;
@@ -108,23 +121,38 @@ dbr:Yên_Lập_Lake  rdf:type  dbo:Place , yago:Thing100002452 , yago:Lake109328
         geo:lat             "20.999734878540039062"^^xsd:float ;
         geo:long            "106.913726806640625"^^xsd:float .
 
-dbr:Turtle_Tower  rdf:type  yago:Site108651247 , yago:YagoPermanentlyLocatedEntity , yago:Tract108673395 , yago:GeographicalArea108574314 , yago:Region108630985 , yago:WikicatHistoricalSitesInHanoi , yago:Object100002684 , yago:YagoLegalActorGeo , yago:YagoGeoEntity , yago:PhysicalEntity100001930 , yago:Lake109328904 , dbo:Building , yago:WikicatLakesOfHanoi , yago:BodyOfWater109225146 , yago:Location100027167 , yago:Thing100002452 ;
+dbr:Hoàn_Kiếm_Lake  rdf:type  yago:WikicatLakesOfVietnam , dbo:Lake , dbo:Place , schema:Place , yago:WikicatLakesOfHanoi , owl:Thing , schema:BodyOfWater , dbo:NaturalPlace , yago:YagoGeoEntity , dbo:Location , yago:Thing100002452 , yago:YagoPermanentlyLocatedEntity , yago:Lake109328904 , yago:PhysicalEntity100001930 , yago:BodyOfWater109225146 , dbo:BodyOfWater , geo:SpatialThing ;
+        rdfs:comment        "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam."@en ;
+        rdfs:label          "Hoàn Kiếm Lake"@en ;
+        dbo:abstract        "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam. In the past, the lake was variously named \"Luc Thuy Lake\" (Vietnamese: Hồ Lục Thủy, meaning \"Green Water Lake\" - aptly named for the water's color) or \"Thuy Quan Lake\" (Vietnamese: Hồ Thủy Quân, meaning \"Mariner's Lake\"). The lake is one of the major scenic spots in the city and serves as a focal point for its public life."@en ;
+        dbp:basinCountries  dbr:Vietnam ;
+        dbp:location        dbr:Hoàn_Kiếm_district , dbr:Hanoi ;
+        dbp:name            "Hoàn Kiếm Lake"@en ;
+        dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Tourist_attractions_in_Hanoi ;
+        georss:point        "21.02888888888889 105.8525" ;
+        geo:lat             "21.028888702392578125"^^xsd:float ;
+        geo:long            "105.85250091552734375"^^xsd:float .
+
+dbr:Trúc_Bạch_Lake  rdf:type  yago:WikicatLakesOfVietnam , owl:Thing , geo:SpatialThing , dbo:Lake , yago:WikicatLakesOfHanoi , dbo:BodyOfWater , yago:Lake109328904 , yago:Thing100002452 , schema:BodyOfWater , dbo:Place , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , schema:Place , dbo:Location , dbo:NaturalPlace , yago:PhysicalEntity100001930 , yago:YagoGeoEntity ;
+        rdfs:comment        "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down."@en ;
+        rdfs:label          "Trúc Bạch Lake"@en ;
+        dbo:abstract        "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down. Trúc Bạch Lake is located northwest of Hanoi's Old Quarter, immediately adjacent to the eastern shore of the city's largest lake, the West Lake (Hồ Tây), a former branch of the Red River whose west bank is nearby. Trúc Bạch Lake was separated from the West Lake by the construction of a narrow dike (Cổ Ngư, \"reinforcement\") in the 17th century to allow raising fish. The inhabitants of the Truc Yen Village, located on the south shore of the newly formed lake, were in the business of making bamboo blinds and hence cultivated a small variety of bamboo. In 1957 and 1958, major Thanh Niên Road was built between the lakes. In 1730s, the Trịnh Lord Trịnh Giang had Trúc Lâm Palace constructed on the lake shore. The building first served as a pleasure palace but was later converted into a prison for royal concubines found guilty of crime. The silk they produced, known as \"Bamboo Village Silk\" became famous for its beauty. The lake front is open only along Thanh Niên Road, the other sides are occupied by houses and residential streets. The lake is among the most seriously polluted in Hanoi. Nearby historical sites include: Quán Thánh Temple to the southwest of the lake, Châu Long Pagoda to the east, An Trì Temple (dedicated to the worship of a hero from the war against the Chinese Yuan Dynasty) on Phó Đức Chính Street, and Cẩu Nhi temple on a small hill near the northern corner of the lake."@en ;
+        dbo:areaTotal       90000.0 ;
+        dbp:basinCountries  "Vietnam"@en ;
+        dbp:location        dbr:Hanoi ;
+        dbp:name            "Trúc Bạch Lake"@en ;
+        dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Oxbow_lakes ;
+        georss:point        "21.045555555555556 105.83805555555556" ;
+        geo:lat             "21.04555511474609375"^^xsd:float ;
+        geo:long            "105.8380584716796875"^^xsd:float .
+
+dbr:Turtle_Tower  rdf:type  yago:Site108651247 , yago:YagoPermanentlyLocatedEntity , yago:Tract108673395 , yago:GeographicalArea108574314 , yago:Region108630985 , yago:WikicatHistoricalSitesInHanoi , yago:Object100002684 , yago:YagoLegalActorGeo , yago:Lake109328904 , yago:PhysicalEntity100001930 , yago:YagoGeoEntity , dbo:Building , yago:WikicatLakesOfHanoi , yago:BodyOfWater109225146 , yago:Location100027167 , yago:Thing100002452 ;
         rdfs:comment  "Turtle Tower (Vietnamese: Tháp Rùa / 塔𪛇), also called Tortoise Tower is a small tower in the middle of Hoan Kiem Lake (Sword Lake) in central Hanoi, Vietnam."@en ;
         rdfs:label    "Turtle Tower"@en ;
         dbo:abstract  "Turtle Tower (Vietnamese: Tháp Rùa / 塔𪛇), also called Tortoise Tower is a small tower in the middle of Hoan Kiem Lake (Sword Lake) in central Hanoi, Vietnam."@en ;
         dct:subject   dbr:Category:Lakes_of_Hanoi , dbr:Category:Historical_sites_in_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Category:Buildings_and_structures_in_Hanoi .
 
-dbr:Búng_Bình_Thiên  rdf:type  dbo:Lake , dbo:Location , yago:PhysicalEntity100001930 , dbo:NaturalPlace , schema:BodyOfWater , yago:Lake109328904 , dbo:BodyOfWater , owl:Thing , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , yago:Thing100002452 , dbo:Place , yago:WikicatLakesOfVietnam , geo:SpatialThing , schema:Place ;
-        rdfs:comment  "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
-        rdfs:label    "Búng Bình Thiên"@en ;
-        dbo:abstract  "Búng Bình Thiên, or God lake, is a fresh water lake in the Mekong Delta in Vietnam. Located in An Giang province within An Phu District, Búng Bình Thiên links three communes, namely Khánh Bình, Nhơn Hội and Quốc Thái, as well as the adjoining Bình Di River and Hậu River. The natural lake is becoming known as an eco-tourist area."@en ;
-        dbp:name      "Búng Bình Thiên"@en ;
-        dct:subject   dbr:Category:Mekong_Delta , dbr:Category:Landforms_of_An_Giang_province , dbr:Category:Lakes_of_Vietnam ;
-        georss:point  "10.916666666666666 105.06666666666666" ;
-        geo:lat       "10.916666984558105469"^^xsd:float ;
-        geo:long      "105.0666656494140625"^^xsd:float .
-
-dbr:Định_Bình_Lake  rdf:type  geo:SpatialThing , yago:Lake109328904 , yago:YagoPermanentlyLocatedEntity , dbo:Location , schema:Place , schema:BodyOfWater , dbo:NaturalPlace , yago:BodyOfWater109225146 , dbo:Lake , yago:YagoGeoEntity , yago:WikicatLakesOfVietnam , yago:PhysicalEntity100001930 , yago:Thing100002452 , owl:Thing , dbo:Place , dbo:BodyOfWater ;
+dbr:Định_Bình_Lake  rdf:type  yago:Lake109328904 , geo:SpatialThing , yago:YagoPermanentlyLocatedEntity , dbo:Location , schema:Place , schema:BodyOfWater , dbo:NaturalPlace , yago:BodyOfWater109225146 , dbo:Lake , yago:YagoGeoEntity , yago:WikicatLakesOfVietnam , yago:PhysicalEntity100001930 , yago:Thing100002452 , owl:Thing , dbo:Place , dbo:BodyOfWater ;
         rdfs:comment        "Định Bình Lake (Vietnamese: Hồ Định Bình) is a large artificial freshwater lake in Vĩnh Thạnh District, Bình Định Province, Vietnam. Work began creating the dam on Côn River in May 2003. It has a capacity of 226 million cubic metres. The lake and dam are expected to provide irrigation for some 12,545 hectares (over 48 square miles)."@en ;
         rdfs:label          "Định Bình Lake"@en ;
         dbo:abstract        "Định Bình Lake (Vietnamese: Hồ Định Bình) is a large artificial freshwater lake in Vĩnh Thạnh District, Bình Định Province, Vietnam. Work began creating the dam on Côn River in May 2003. It has a capacity of 226 million cubic metres. The lake and dam are expected to provide irrigation for some 12,545 hectares (over 48 square miles)."@en ;
@@ -136,57 +164,37 @@ dbr:Định_Bình_Lake  rdf:type  geo:SpatialThing , yago:Lake109328904 , yago:Y
         geo:lat             "14.169444084167480469"^^xsd:float ;
         geo:long            "108.7611083984375"^^xsd:float .
 
-dbr:Trúc_Bạch_Lake  rdf:type  yago:WikicatLakesOfVietnam , owl:Thing , geo:SpatialThing , dbo:Lake , yago:WikicatLakesOfHanoi , dbo:BodyOfWater , yago:Lake109328904 , yago:Thing100002452 , dbo:Place , schema:BodyOfWater , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , schema:Place , dbo:Location , yago:PhysicalEntity100001930 , dbo:NaturalPlace , yago:YagoGeoEntity ;
-        rdfs:comment        "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down."@en ;
-        rdfs:label          "Trúc Bạch Lake"@en ;
-        dbo:abstract        "Trúc Bạch Lake (Vietnamese: Hồ Trúc Bạch) is one of the many lakes in the city of Hanoi, the capital of Vietnam. It is known outside Vietnam as the site where future United States politician John McCain landed during the Vietnam War after being shot down. Trúc Bạch Lake is located northwest of Hanoi's Old Quarter, immediately adjacent to the eastern shore of the city's largest lake, the West Lake (Hồ Tây), a former branch of the Red River whose west bank is nearby. Trúc Bạch Lake was separated from the West Lake by the construction of a narrow dike (Cổ Ngư, \"reinforcement\") in the 17th century to allow raising fish. The inhabitants of the Truc Yen Village, located on the south shore of the newly formed lake, were in the business of making bamboo blinds and hence cultivated a small variety of bamboo. In 1957 and 1958, major Thanh Niên Road was built between the lakes. In 1730s, the Trịnh Lord Trịnh Giang had Trúc Lâm Palace constructed on the lake shore. The building first served as a pleasure palace but was later converted into a prison for royal concubines found guilty of crime. The silk they produced, known as \"Bamboo Village Silk\" became famous for its beauty. The lake front is open only along Thanh Niên Road, the other sides are occupied by houses and residential streets. The lake is among the most seriously polluted in Hanoi. Nearby historical sites include: Quán Thánh Temple to the southwest of the lake, Châu Long Pagoda to the east, An Trì Temple (dedicated to the worship of a hero from the war against the Chinese Yuan Dynasty) on Phó Đức Chính Street, and Cẩu Nhi temple on a small hill near the northern corner of the lake."@en ;
-        dbo:areaTotal       90000.0 ;
-        dbp:basinCountries  "Vietnam"@en ;
-        dbp:name            "Trúc Bạch Lake"@en ;
-        dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Oxbow_lakes ;
-        georss:point        "21.045555555555556 105.83805555555556" ;
-        geo:lat             "21.04555511474609375"^^xsd:float ;
-        geo:long            "105.8380584716796875"^^xsd:float .
-
 dbr:Cấm_Sơn_Lake  rdf:type  yago:Thing100002452 , owl:Thing , yago:WikicatLakesOfVietnam , dbo:Place , dbo:BodyOfWater , yago:YagoGeoEntity , geo:SpatialThing , schema:Place , yago:PhysicalEntity100001930 , schema:BodyOfWater , yago:Lake109328904 , dbo:NaturalPlace , yago:YagoPermanentlyLocatedEntity , dbo:Location , yago:BodyOfWater109225146 , dbo:Lake ;
         rdfs:comment   "Cấm Sơn Lake (Vietnamese: Hồ Cấm Sơn) is a lake in Lục Ngạn District, Bắc Giang Province, Vietnam, near the border with Lạng Sơn Province. The lake lies off Highway 279, northeast of the city of Bắc Giang. The lake has an area of some 2,600 hectares (6,400 acres), but during the rainy season when flooding is common, the lake can expand to some 3,000 hectares (7,400 acres). The length of the lake is about 30 kilometres (19 mi). Its widest point is about 7 kilometres (4.3 mi) and narrowest point is about 200 metres (660 ft). \n* v \n* t \n* e"@en ;
         rdfs:label     "Cấm Sơn Lake"@en ;
         dbo:abstract   "Cấm Sơn Lake (Vietnamese: Hồ Cấm Sơn) is a lake in Lục Ngạn District, Bắc Giang Province, Vietnam, near the border with Lạng Sơn Province. The lake lies off Highway 279, northeast of the city of Bắc Giang. The lake has an area of some 2,600 hectares (6,400 acres), but during the rainy season when flooding is common, the lake can expand to some 3,000 hectares (7,400 acres). The length of the lake is about 30 kilometres (19 mi). Its widest point is about 7 kilometres (4.3 mi) and narrowest point is about 200 metres (660 ft). \n* v \n* t \n* e"@en ;
         dbo:areaTotal  26000000.0 ;
+        dbp:location   dbr:Vietnam , dbr:Bắc_Giang_province , dbr:Lục_Ngạn_district ;
         dbp:name       "Cấm Sơn Lake"@en ;
         dct:subject    dbr:Category:Lakes_of_Vietnam , dbr:Category:Landforms_of_Bắc_Giang_province ;
         georss:point   "21.534444444444446 106.56444444444445" ;
         geo:lat        "21.534444808959960938"^^xsd:float ;
         geo:long       "106.56444549560546875"^^xsd:float .
 
-dbr:Hoàn_Kiếm_Lake  rdf:type  yago:WikicatLakesOfVietnam , dbo:Lake , dbo:Place , schema:Place , yago:WikicatLakesOfHanoi , owl:Thing , schema:BodyOfWater , dbo:NaturalPlace , yago:YagoGeoEntity , dbo:Location , yago:Thing100002452 , yago:YagoPermanentlyLocatedEntity , yago:Lake109328904 , yago:PhysicalEntity100001930 , yago:BodyOfWater109225146 , dbo:BodyOfWater , geo:SpatialThing ;
-        rdfs:comment        "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam."@en ;
-        rdfs:label          "Hoàn Kiếm Lake"@en ;
-        dbo:abstract        "Hoàn Kiếm Lake (Vietnamese: Hồ Hoàn Kiếm, Hán tự: 湖還劍, meaning \"Lake of the Returned Sword\" or \"Lake of the Restored Sword\"), also known as Sword Lake (Hồ Gươm) or Tả Vọng Lake (Hồ Tả Vọng), is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam. In the past, the lake was variously named \"Luc Thuy Lake\" (Vietnamese: Hồ Lục Thủy, meaning \"Green Water Lake\" - aptly named for the water's color) or \"Thuy Quan Lake\" (Vietnamese: Hồ Thủy Quân, meaning \"Mariner's Lake\"). The lake is one of the major scenic spots in the city and serves as a focal point for its public life."@en ;
-        dbp:basinCountries  dbr:Vietnam ;
-        dbp:name            "Hoàn Kiếm Lake"@en ;
-        dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Lakes_of_Hanoi , dbr:Category:Tourist_attractions_in_Hanoi ;
-        georss:point        "21.02888888888889 105.8525" ;
-        geo:lat             "21.028888702392578125"^^xsd:float ;
-        geo:long            "105.85250091552734375"^^xsd:float .
-
-dbr:Bàu_Tró  rdf:type       dbo:Location , yago:YagoPermanentlyLocatedEntity , yago:YagoGeoEntity , dbo:Place , yago:BodyOfWater109225146 , owl:Thing , schema:Place , yago:Thing100002452 , geo:SpatialThing , dbo:Lake , yago:PhysicalEntity100001930 , dbo:BodyOfWater , yago:WikicatLakesOfVietnam , dbo:NaturalPlace , schema:BodyOfWater , yago:Lake109328904 ;
+dbr:Bàu_Tró  rdf:type       yago:YagoGeoEntity , dbo:Location , yago:YagoPermanentlyLocatedEntity , owl:Thing , dbo:Place , yago:BodyOfWater109225146 , schema:Place , yago:Thing100002452 , geo:SpatialThing , dbo:Lake , yago:PhysicalEntity100001930 , dbo:BodyOfWater , yago:WikicatLakesOfVietnam , dbo:NaturalPlace , schema:BodyOfWater , yago:Lake109328904 ;
         rdfs:comment        "Bàu Tró (Bàu in Vietnamese dialect means pond) is a lake in Đồng Hới city, Quảng Bình Province, Vietnam. This lake is an important fresh water supply for more than 130,000 inhabitants of Đồng Hới. Bàu Tró is better known for archaeological findings by French archaeologists during French Indochina periods. The artefacts found here dated back as far as 5,000 years ago, displaying important proof of human settlements in this area. \n* v \n* t \n* e"@en ;
         rdfs:label          "Bàu Tró"@en ;
         dbo:abstract        "Bàu Tró (Bàu in Vietnamese dialect means pond) is a lake in Đồng Hới city, Quảng Bình Province, Vietnam. This lake is an important fresh water supply for more than 130,000 inhabitants of Đồng Hới. Bàu Tró is better known for archaeological findings by French archaeologists during French Indochina periods. The artefacts found here dated back as far as 5,000 years ago, displaying important proof of human settlements in this area. \n* v \n* t \n* e"@en ;
         dbp:basinCountries  "Vietnam"@en ;
+        dbp:location        dbr:Quảng_Bình_province , dbr:Đồng_Hới ;
         dbp:name            "Bàu Tró"@en ;
         dct:subject         dbr:Category:Landforms_of_Quảng_Bình_province , dbr:Category:Lakes_of_Vietnam ;
         georss:point        "17.491389 106.622778" ;
         geo:lat             "17.491388320922851562"^^xsd:float ;
         geo:long            "106.62277984619140625"^^xsd:float .
 
-dbr:Ba_Bể_Lake  rdf:type    dbo:Location , yago:YagoLegalActorGeo , yago:GeographicalArea108574314 , owl:Thing , yago:Tract108673395 , yago:Object100002684 , yago:Region108630985 , yago:YagoGeoEntity , yago:PhysicalEntity100001930 , schema:BodyOfWater , geo:SpatialThing , schema:Place , yago:WikicatLakesOfVietnam , yago:Site108651247 , dbo:BodyOfWater , yago:WikicatRamsarSitesInVietnam , dbo:Place , dbo:NaturalPlace , yago:Lake109328904 , yago:BodyOfWater109225146 , yago:YagoPermanentlyLocatedEntity , yago:Thing100002452 , yago:Location100027167 , dbo:Lake ;
+dbr:Ba_Bể_Lake  rdf:type    dbo:Location , yago:YagoLegalActorGeo , owl:Thing , yago:GeographicalArea108574314 , yago:Tract108673395 , yago:Object100002684 , yago:Region108630985 , yago:YagoGeoEntity , yago:PhysicalEntity100001930 , schema:BodyOfWater , geo:SpatialThing , schema:Place , yago:WikicatLakesOfVietnam , yago:Site108651247 , dbo:BodyOfWater , yago:WikicatRamsarSitesInVietnam , dbo:Place , dbo:NaturalPlace , yago:BodyOfWater109225146 , yago:Lake109328904 , yago:YagoPermanentlyLocatedEntity , yago:Location100027167 , yago:Thing100002452 , dbo:Lake ;
         rdfs:comment        "Ba Bể Lake (Vietnamese: Hồ Ba Bể; Ba means Three, Bể is from the Tay language word pé, meaning \"lake\") is the largest natural lake in Vietnam. It is located in Nam Mẫu commune, Ba Bể district, Bắc Kạn Province in the Northeast region of the country. Ba Bể Lake is a featured geographical science and is a biodiversity reservoir. It is a part of the Ba Bể National Park. It is home to a range of animals and plants."@en ;
         rdfs:label          "Ba Bể Lake"@en ;
         dbo:abstract        "Ba Bể Lake (Vietnamese: Hồ Ba Bể; Ba means Three, Bể is from the Tay language word pé, meaning \"lake\") is the largest natural lake in Vietnam. It is located in Nam Mẫu commune, Ba Bể district, Bắc Kạn Province in the Northeast region of the country. Having been formed approximately 200 million years ago, the lake is surrounded by limestone cliffs, which in turn are covered by primary forests. The lake comprises three zones named Pé Lầm, Pé Lù, and Pé Lèng. Three rivers, named Năng, Tả Han, and Nam Cường, are the main inflows of the lake. The Năng river enters the lake through a large waterfall called Đầu Đẳng. In the lake there are also three islands, named Án Mã, Khẩu Cúm, and Po Gia Mải (literally \"Widow's Island\"). Ba Bể Lake is a featured geographical science and is a biodiversity reservoir. It is a part of the Ba Bể National Park. It is home to a range of animals and plants."@en ;
         dbo:areaTotal       6500000.0 ;
         dbp:basinCountries  "Vietnam"@en ;
+        dbp:location        dbr:Bắc_Kạn_province ;
         dbp:name            "Ba Bể Lake"@en ;
         dct:subject         dbr:Category:Lakes_of_Vietnam , dbr:Category:Ramsar_sites_in_Vietnam , dbr:Category:Landforms_of_Bắc_Kạn_province ;
         georss:point        "22.416666666666668 105.61666666666666" ;
@@ -197,17 +205,19 @@ dbr:Ayun_Hạ_Lake  rdf:type  yago:YagoPermanentlyLocatedEntity , schema:BodyOfW
         rdfs:comment  "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
         rdfs:label    "Ayun Hạ Lake"@en ;
         dbo:abstract  "Ayun Ha Lake (Vietnamese: Hồ Ayun Hạ) is an artificial lake in Gia Lai Province, Vietnam. The lake was formed when the Ayun River was stopped early in 1994, to start the construction of a dam and lake for irrigation. The flooded area of the lake district belongs to the commune of HBong Chu Se. The lake has a surface area of 37 km2 (14 sq mi), and has a length of 25 km (16 mi), and is 5 km (3.1 mi) at its widest."@en ;
+        dbp:location  dbr:Gia_Lai_province , dbr:Vietnam ;
         dbp:name      "Ayun Ha Lake"@en ;
         dct:subject   dbr:Category:Landforms_of_Gia_Lai_province , dbr:Category:Lakes_of_Vietnam .
 
 <http://dbpedia.org/resource/West_Lake_(Hanoi)>
-        rdf:type            wikidata:Q23397 , dbo:NaturalPlace , dbo:Place , yago:BodyOfWater109225146 , yago:Lake109328904 , yago:WikicatLakesOfVietnam , yago:YagoGeoEntity , dbo:Lake , yago:PhysicalEntity100001930 , schema:LakeBodyOfWater , owl:Thing , yago:YagoPermanentlyLocatedEntity , dbo:BodyOfWater , yago:WikicatLakesOfHanoi , schema:BodyOfWater , yago:Thing100002452 , geo:SpatialThing , schema:Place , dbo:Location ;
+        rdf:type            wikidata:Q23397 , dbo:NaturalPlace , dbo:Place , yago:BodyOfWater109225146 , yago:Lake109328904 , yago:WikicatLakesOfVietnam , yago:YagoGeoEntity , yago:PhysicalEntity100001930 , dbo:Lake , owl:Thing , schema:LakeBodyOfWater , yago:YagoPermanentlyLocatedEntity , dbo:BodyOfWater , yago:WikicatLakesOfHanoi , schema:BodyOfWater , yago:Thing100002452 , geo:SpatialThing , schema:Place , dbo:Location ;
         rdfs:comment        "West Lake (Vietnamese: Hồ Tây) is the biggest freshwater lake of Hanoi, Vietnam, located northwest of the city center. With a shore length of 17 km (about 10.6 miles) and 500 hectare (about 5 km2) in area, this is the largest lake of the capital and a popular place for recreation with many surrounding gardens, hotels and villas. A small part of West Lake is divided by to form Trúc Bạch Lake. Most of the lake is located within Tây Hồ District, named after the lake."@en ;
         rdfs:label          "West Lake (Hanoi)"@en ;
         dbo:abstract        "West Lake (Vietnamese: Hồ Tây) is the biggest freshwater lake of Hanoi, Vietnam, located northwest of the city center. With a shore length of 17 km (about 10.6 miles) and 500 hectare (about 5 km2) in area, this is the largest lake of the capital and a popular place for recreation with many surrounding gardens, hotels and villas. A small part of West Lake is divided by to form Trúc Bạch Lake. Most of the lake is located within Tây Hồ District, named after the lake."@en ;
         dbo:shoreLength     17000.0 ;
         dbp:basinCountries  "Vietnam"@en ;
         dbp:lakeType        "Freshwater lake"@en ;
+        dbp:location        dbr:Hanoi ;
         dbp:name            "West Lake"@en ;
         dct:subject         dbr:Category:Tourist_attractions_in_Hanoi , dbr:Category:Lakes_of_Hanoi , dbr:Category:Lakes_of_Vietnam , dbr:Category:Hong_River ;
         georss:point        "21.055 105.82" ;

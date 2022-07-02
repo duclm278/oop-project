@@ -1,28 +1,34 @@
 package query;
 
+import java.util.ArrayList;
+
 public abstract class QueryBy {
-    private String type;
-    private String subjectOf;
-    private String label;
-    private String abstractInfo;
-    private String comment;
+    private ArrayList<String> infoList;
 
     public QueryBy() {
-        type         = "?s rdf:type ?type.";
-        subjectOf    = "?s dct:subject ?subject.";
-        label        = "?s rdfs:label ?label.";
-        abstractInfo = "?s dbo:abstract ?abstract.";
-        comment      = "?s rdfs:comment ?comment.";
+        infoList = new ArrayList<>();
+        infoList.add("?s rdf:type ?type.");
+        infoList.add("?s dct:subject ?subject.");
+        infoList.add("?s rdfs:label ?label.");
+        infoList.add("?s dbo:abstract ?abstract.");
+        infoList.add("?s rdfs:comment ?comment.");
     }
 
     public abstract String getOutName();
 
     public abstract String getPagesByTopic();
 
-    public abstract String getOfflineQueryStr();
+    public String getOfflineQueryStr() {
+        String QueryStr = "CONSTRUCT {" + "\n" +
+                          makeQueryBlock(infoList) + "\n" +
+                          "} WHERE {" + " \n" +
+                          makeOptQueryBlock(infoList) + "\n" +
+                          "}";
+        return QueryStr;
+    }
 
     public String getOnlineQueryStr() {
-        String QuerySet = "CONSTRUCT {" + "\n" +
+        String QueryStr = "CONSTRUCT {" + "\n" +
                           "?s ?p ?o" + "\n" +
                           "} WHERE {" + " \n" +
                           getPagesByTopic() + "\n" +
@@ -30,26 +36,27 @@ public abstract class QueryBy {
                           "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))" + "\n" +
                           "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" + "\n" +
                           "}";
-        return QuerySet;
+        return QueryStr;
     }
 
-    public String getType() {
-        return type;
+    public String makeQueryBlock(ArrayList<String> queryList) {
+        String queryBlock = String.join("\n", queryList);
+        return queryBlock;
     }
 
-    public String getSubjectOf() {
-        return subjectOf;
+    public String makeOptQueryBlock(ArrayList<String> queryList) {
+        ArrayList<String> optQueryList = new ArrayList<>();
+
+        // Add OPTIONAL command to each item
+        for (String queryItem : queryList) {
+            optQueryList.add("OPTIONAL {" + queryItem + "}");
+        }
+
+        String optQueryBlock = String.join("\n", optQueryList);
+        return optQueryBlock;
     }
 
-    public String getLabel() {
-        return label;
-    }
-
-    public String getAbstractInfo() {
-        return abstractInfo;
-    }
-
-    public String getComment() {
-        return comment;
+    public ArrayList<String> getInfoList() {
+        return infoList;
     }
 }
