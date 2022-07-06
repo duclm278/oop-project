@@ -1,0 +1,15 @@
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+    ?s ?p ?o.
+} WHERE {
+    ?s dct:subject/skos:broader* dbc:Tourist_attractions_in_Vietnam.
+    ?s ?p ?o.
+    FILTER (!isLITERAL(?o) || LANG(?o) = "" || langMATCHES(lang(?o), "en"))
+    FILTER (STR(?o) != "")
+    FILTER (!CONTAINS(LCASE(STR(?p)), "wiki"))
+    FILTER (!CONTAINS(LCASE(STR(?s)), "list_of"))
+}

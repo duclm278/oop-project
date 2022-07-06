@@ -1,13 +1,18 @@
 package query;
 
 import java.util.ArrayList;
+import org.apache.jena.rdf.model.*;
 
-public abstract class QueryBy implements QueryCore {
+import util.AutoPrefix;
+import util.ISaveModeAs;
+import util.Processing;
+
+public abstract class QueryDBpedia implements ICrawler {
     private ArrayList<String> infoList;
 
-    public QueryBy() {
+    public QueryDBpedia() {
         infoList = new ArrayList<>();
-        addCoreInfo2List(infoList);
+        QuerySets.addCoreInfo2List(infoList);
     }
 
     public abstract String getOutName();
@@ -25,11 +30,13 @@ public abstract class QueryBy implements QueryCore {
 
     public String getOnlineQueryStr() {
         String QueryStr = "CONSTRUCT {" + "\n" +
-                          "?s ?p ?o" + "\n" +
+                          "?s ?p ?o." + "\n" +
                           "} WHERE {" + " \n" +
                           getPagesByTopic() + "\n" +
-                          "?s ?p ?o" + "\n" +
+                          "?s ?p ?o." + "\n" +
                           "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))" + "\n" +
+                          "FILTER (STR(?o) != '')" + "\n" +
+                          "FILTER (!CONTAINS(LCASE(STR(?p)), 'wiki'))" + "\n" +
                           "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" + "\n" +
                           "}";
         return QueryStr;
@@ -50,6 +57,30 @@ public abstract class QueryBy implements QueryCore {
 
         String optQueryBlock = String.join("\n", optQueryList);
         return optQueryBlock;
+    }
+
+    @Override
+    public void extractData(ISaveModeAs writer) {
+        String outName = this.getOutName();
+
+        // Online request to get raw data
+        String onlineQueryStr = this.getOnlineQueryStr();
+        onlineQueryStr = AutoPrefix.addPrefix(onlineQueryStr);
+        System.out.println(onlineQueryStr);
+        Model onlineModel = Processing.executeQuery(onlineQueryStr);
+        Processing.writeModel(outName + "_tmp.ttl", onlineModel, writer);
+        System.out.println();
+
+        // Offline request to get actual data
+        String offlineQueryStr = this.getOfflineQueryStr();
+        offlineQueryStr = AutoPrefix.addPrefix(offlineQueryStr);
+        System.out.println(offlineQueryStr);
+        Model inModel = Processing.readModel(outName + "_tmp.ttl");
+        Model offlineModel = Processing.executeQuery(offlineQueryStr, inModel);
+        Processing.writeModel(outName + ".ttl", offlineModel, writer);
+
+        // Delete stuff
+        Processing.deleteFile(outName + "_tmp.ttl");
     }
 
     public ArrayList<String> getInfoList() {

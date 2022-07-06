@@ -1,8 +1,8 @@
 package query;
 
-public abstract class QueryByPlace extends QueryBy implements QueryGeo {
+public abstract class QueryByPlace extends QueryDBpedia {
     public QueryByPlace() {
         super();
-        addGeoInfo2List(getInfoList());
+        QuerySets.addGeoInfo2List(getInfoList());
     }
 }
