@@ -1,7 +1,7 @@
 package query;
 
-import util.ISaveModeAs;
+import util.ISaveModelAs;
 
 public interface ICrawler {
-    public void extractData(ISaveModeAs writer);
+    public void extractData(ISaveModelAs writer);
 }

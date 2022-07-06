@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import org.apache.jena.rdf.model.*;
 
 import util.AutoPrefix;
-import util.ISaveModeAs;
+import util.ISaveModelAs;
 import util.Processing;
 
 public abstract class QueryDBpedia implements ICrawler {
@@ -60,7 +60,7 @@ public abstract class QueryDBpedia implements ICrawler {
     }
 
     @Override
-    public void extractData(ISaveModeAs writer) {
+    public void extractData(ISaveModelAs writer) {
         String outName = this.getOutName();
 
         // Online request to get raw data

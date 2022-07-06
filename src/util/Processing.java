@@ -50,7 +50,7 @@ public class Processing {
         // TODO: Code it!
     }
 
-    public static void writeModel(String filename, Model model, ISaveModeAs writer) {
+    public static void writeModel(String filename, Model model, ISaveModelAs writer) {
         try {
             OutputStream outStream = new FileOutputStream(filename, false);
             writer.saveModel(model, outStream);

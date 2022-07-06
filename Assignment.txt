@@ -3,10 +3,11 @@ Thanh:
         public static String addPrefixes(String query)
 
     Processing:
-        public static String readContent(String fileName)
-        public static Model execute(String query)
-        public static void deleteTempFile(String fileName)
-        public static void writeContent(String fileName, Model model)
+        public static Model readModel(String fileName)
+        public static Model executeQuery(String queryStr)
+        public static Model executeQuery(String queryStr, Model inModel)
+        public static void deleteFile(String fileName)
+        public static void writeModel(String filename, Model model, ISaveModelAs writer)
 
     QueryByCity - Abstract
         QueryByHanoi
@@ -15,11 +16,11 @@ Thanh:
         QueryByHCM
 
 Duc:
-    public interface QueryGeo(); // geo:lat, geo:long, country, ...
-        
-    public interface QueryDate(); // openingDate, startDate, ...
+    ICrawler - Interface
+    ISaveModelAs - Interface
+    SaveModelAsTurtle
 
-    QueryBy - Abstract
+    QueryDBpedia - Abstract
     QueryByPlace - Abstract
     QueryByLake
     QueryByProvince
