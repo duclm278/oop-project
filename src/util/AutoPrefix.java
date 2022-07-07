@@ -10,7 +10,7 @@ public class AutoPrefix {
                           "PREFIX dbc: <http://dbpedia.org/resource/Category:>\n" +
                           "PREFIX dbp: <http://dbpedia.org/property/>\n" +
                           "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n" +
-                          "PREFIX georss: <http://www.georss.org/georss/>\n" +
+                          "PREFIX georss: <http://www.georss.org/georss/>" +
                           "";
 
         return prefixes + "\n" + query;

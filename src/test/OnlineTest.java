@@ -16,7 +16,9 @@ public class OnlineTest {
         try (QueryExecution qExec = QueryExecutionHTTP.create()
                 .endpoint("http://dbpedia.org/sparql")
                 .query(query)
-                .param("timeout", "300000") // 5 minutes
+                .param("timeout", "30000")         // Default on the web
+                .param("signal_void", "on")        // Default on the web
+                .param("signal_unconnected", "on") // Default on the web
                 .build()) {
 
             Model model = qExec.execConstruct();
