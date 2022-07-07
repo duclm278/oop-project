@@ -49,7 +49,13 @@ public class Processing {
     }
 
     public static void deleteFile(String fileName) {
-        // TODO: Code it!
+        // fileName must be a absolute path
+        File file = new File(fileName);
+    	if(file.delete()) {
+    		System.out.println("Delete successfully!");
+    	}else {
+    		System.out.println("Cannot find your file!");
+    	}
     }
 
     public static void writeModel(String filename, Model model, ISaveModelAs writer) {
