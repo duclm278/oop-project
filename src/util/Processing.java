@@ -15,7 +15,7 @@ public class Processing {
 
     public static Model executeQuery(String queryStr) {
         Model outModel = null;
-        queryStr = AutoPrefix.addPrefix(queryStr);
+        queryStr = AutoPrefix.addPrefixes(queryStr);
         Query query = QueryFactory.create(queryStr);
         try (QueryExecution qExec = QueryExecutionHTTP.create()
                 .endpoint("http://dbpedia.org/sparql")
@@ -36,7 +36,7 @@ public class Processing {
 
     public static Model executeQuery(String queryStr, Model inModel) {
         Model outModel = null;
-        queryStr = AutoPrefix.addPrefix(queryStr);
+        queryStr = AutoPrefix.addPrefixes(queryStr);
         Query query = QueryFactory.create(queryStr);
         try (QueryExecution qExec = QueryExecutionFactory.create(query, inModel)) {
             outModel = qExec.execConstruct();

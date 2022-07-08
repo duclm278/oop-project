@@ -5,15 +5,10 @@ Thanh:
     Processing:
         public static Model readModel(String fileName)
         public static Model executeQuery(String queryStr)
-        public static Model executeQuery(String queryStr, Model inModel)
         public static void deleteFile(String fileName)
         public static void writeModel(String filename, Model model, ISaveModelAs writer)
 
-    QueryByCity - Abstract
-        QueryByHanoi
-        QueryByDaNang
-        QueryByHue
-        QueryByHCM
+    QueryByCity
 
 Duc:
     ICrawler - Interface
@@ -21,10 +16,8 @@ Duc:
     SaveModelAsTurtle
 
     QueryDBpedia - Abstract
-    QueryByPlace - Abstract
     QueryByLake
     QueryByProvince
-    QueryByFestival
 
 Phuong:
     QueryByVenue
@@ -36,18 +29,10 @@ Phuong:
     QueryByCave
     QueryBySquare
     QueryByWaterfall
+    QueryByFestival
+    QueryByOthers
 
 Huy:
-GUI:
-    ArrayList<QueryByCity> objs = new ...
-    objs.add(new QueryByHanoi)
-    objs.add(new QueryByDaNang)
-    objs.add(new QueryByHoChiMinh)
-
-    for obj : objs
-        query = obj.getQueryStr();
-        Model modelResult = Processing.execute(query);
-        Processing.writeContent(fileName, modelResult);
-        
+    GUI
     QueryByLandmark
     QueryByMuseum
