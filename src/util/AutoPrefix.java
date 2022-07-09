@@ -26,7 +26,7 @@ public class AutoPrefix {
 	
 	public static HashMap<String, String> prefixes(){
 		HashMap<String, String> prefixesName = new HashMap<>();
-		String name = "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\Study\\20212\\OOP\\OOP-Project\\src\\Code\\Prefixes.rq";
+		String name = "src\\util\\Prefixes.rq";
 		try {
 			File file =new File(name);
 			FileReader fr=new FileReader(file);
@@ -47,23 +47,7 @@ public class AutoPrefix {
 	
 //  FOR TESTING
 //	public static void main (String[] args) {
-//		HashMap<String, String> prefixesName = new HashMap<>();
-//		String name = "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\Study\\20212\\OOP\\OOP-Project\\src\\Code\\Prefixes.rq";
-//		try {
-//			File file =new File(name);
-//			FileReader fr=new FileReader(file);
-//			BufferedReader br=new BufferedReader(fr);
-//			String line;
-//			while((line = br.readLine()) != null) {
-//				String[] list = line.split("\\s+");
-//				prefixesName.put(list[1], list[2]);
-//			}
-//			fr.close();
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+// 		HashMap<String, String> map = prefixes();
 //		int i = 1;
 //		for(String key :prefixesName.keySet()) {
 //			System.out.println(i++ + ". " + key + "  " + prefixesName.get(key));
