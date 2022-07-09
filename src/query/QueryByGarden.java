@@ -8,6 +8,6 @@ public class QueryByGarden extends QueryDBpedia {
 
     @Override
     public String getPagesByTopic() {
-        return "?s dct:subject/skos:broader* dbc:Gardens_in_Vietnam";
+        return "?s dct:subject/skos:broader* dbc:Gardens_in_Vietnam.";
     }
 }

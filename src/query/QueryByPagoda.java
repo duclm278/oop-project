@@ -8,6 +8,6 @@ public class QueryByPagoda extends QueryDBpedia {
 
     @Override
     public String getPagesByTopic() {
-        return "?s dct:subject/skos:broader* dbc:Pagodas_in_Vietnam";
+        return "?s dct:subject/skos:broader* dbc:Pagodas_in_Vietnam.";
     }
 }
