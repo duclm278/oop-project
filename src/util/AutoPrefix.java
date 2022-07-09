@@ -13,7 +13,8 @@ public class AutoPrefix {
 		prefixes = prefixes();
 		StringBuffer prefix = new StringBuffer();
 		String temp;
-;		for(String key: prefixes.keySet()) {
+		prefixes.put("dbp:", "<http://dbpedia.org/property/>");
+		for(String key: prefixes.keySet()) {
 			if(query.contains(key)) {
 				temp = "PREFIX " + key + " " + prefixes.get(key) + "\n";
 				prefix.append(temp);
