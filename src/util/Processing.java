@@ -1,5 +1,4 @@
 package util;
-
 import java.io.*;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
@@ -16,7 +15,12 @@ public class Processing {
     public static Model executeQuery(String queryStr) {
         Model outModel = null;
         queryStr = AutoPrefix.addPrefixes(queryStr);
-        Query query = QueryFactory.create(queryStr);
+        Query query = null;
+        try {
+        	query = QueryFactory.create(queryStr);
+        }catch(QueryParseException e) {
+        	e.printStackTrace();
+        }
         try (QueryExecution qExec = QueryExecutionHTTP.create()
                 .endpoint("http://dbpedia.org/sparql")
                 .query(query)
@@ -26,7 +30,7 @@ public class Processing {
                 .build()) {
 
             outModel =  qExec.execConstruct();
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
             e.printStackTrace();
             System.exit(1);
         }
@@ -34,19 +38,6 @@ public class Processing {
         return outModel;
     }
 
-    public static Model executeQuery(String queryStr, Model inModel) {
-        Model outModel = null;
-        queryStr = AutoPrefix.addPrefixes(queryStr);
-        Query query = QueryFactory.create(queryStr);
-        try (QueryExecution qExec = QueryExecutionFactory.create(query, inModel)) {
-            outModel = qExec.execConstruct();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-
-        return outModel;
-    }
 
     public static void deleteFile(String fileName) {
         // fileName must be a absolute path
@@ -59,10 +50,10 @@ public class Processing {
     }
 
     public static void writeModel(String filename, Model model, ISaveModelAs writer) {
-        try {
+    	try {
             OutputStream outStream = new FileOutputStream(filename, false);
             writer.saveModel(model, outStream);
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
         }
