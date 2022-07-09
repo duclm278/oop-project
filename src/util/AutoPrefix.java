@@ -26,7 +26,7 @@ public class AutoPrefix {
 	
 	public static HashMap<String, String> prefixes(){
 		HashMap<String, String> prefixesName = new HashMap<>();
-		String name = "src\\util\\Prefixes.rq";
+		String name = "src/util/Prefixes.rq";
 		try {
 			File file =new File(name);
 			FileReader fr=new FileReader(file);
