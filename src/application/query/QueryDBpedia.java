@@ -12,10 +12,12 @@ public abstract class QueryDBpedia implements ICrawler {
 	public abstract String getPagesByTopic();
 
 	public String getOnlineQueryStr() {
-		String QueryStr = "CONSTRUCT {" + "\n" + "?s ?p ?o." + "\n" + "} WHERE {" + " \n" + getPagesByTopic() + "\n"
-				+ "?s ?p ?o." + "\n"
+		String QueryStr = "CONSTRUCT {" + "\n" + "?s ?p ?o." + "\n" + "} WHERE {" + " \n"
+				+ getPagesByTopic() + "\n" + "?s ?p ?o." + "\n"
 				+ "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))"
-				+ "\n" + "FILTER (STR(?o) != '')" + "\n" + "FILTER (!CONTAINS(LCASE(STR(?p)), 'wiki'))" + "\n"
+				+ "\n"
+				+ "FILTER (STR(?o) != '')" + "\n"
+				+ "FILTER (!CONTAINS(LCASE(STR(?p)), 'wiki'))" + "\n"
 				+ "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" + "\n" + "}";
 		return QueryStr;
 	}

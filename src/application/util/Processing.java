@@ -6,8 +6,6 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.riot.*;
 import org.apache.jena.sparql.exec.http.QueryExecutionHTTP;
 
-// Not official yet!
-// Need catching errors!
 public class Processing {
 	public static Model readModel(String filename) {
 		return RDFDataMgr.loadModel(filename);
@@ -23,8 +21,8 @@ public class Processing {
 			e.printStackTrace();
 		}
 		try (QueryExecution qExec = QueryExecutionHTTP.create().endpoint("http://dbpedia.org/sparql").query(query)
-				.param("timeout", "30000") // Default on the web
-				.param("signal_void", "on") // Default on the web
+				.param("timeout", "30000")         // Default on the web
+				.param("signal_void", "on")        // Default on the web
 				.param("signal_unconnected", "on") // Default on the web
 				.build()) {
 

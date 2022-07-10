@@ -5,8 +5,7 @@ import java.util.HashMap;
 public class QueryByCity extends QueryDBpedia {
 
 	private String cityName;
-	// Vì phần đuôi của mỗi city k có quy luật nên cần tạo 1 map
-	// để lưu trữ
+	// Vì phần đuôi của mỗi city k có quy luật nên cần tạo 1 map để lưu trữ
 	private HashMap<String, String> cityList = new HashMap<String, String>();
 
 	public QueryByCity(String cityName) {

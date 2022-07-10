@@ -23,8 +23,7 @@ public class HomeScreenController implements Initializable {
 	private Text appTitle;
 
 	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-	}
+	public void initialize(URL location, ResourceBundle resources) {}
 
 	public void goToSearchScreen(ActionEvent event) throws IOException {
 		OpenNewScene.inOldWindow(searchScreenFXML, styleSheetCSS, event, this);
