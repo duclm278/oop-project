@@ -3,7 +3,7 @@ package query;
 public class QueryByOthers extends QueryDBpedia {
     @Override
     public String getOutName() {
-        return "Tourist_attractions_in_Vietnam";
+        return "Others";
     }
 
     @Override
