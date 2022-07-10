@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1000.0" stylesheets="@../util/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gui.searchscreen.SearchScreenController">
+   <children>
+      <BorderPane layoutY="-7.0" prefHeight="705.0" prefWidth="1003.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane prefHeight="61.0" prefWidth="807.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backToHomeButton" layoutX="803.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHomeScreen" text="Back To Home" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="803.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openSaveAsWindow" text="Save as" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" onAction="#openAboutMenu" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a category" wrappingWidth="385.99560546875">
+                     <VBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <HBox prefHeight="596.0" prefWidth="1000.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="262.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <MenuButton fx:id="byCityButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="364.0" styleClass="modified-menu-button" text="▼ Tourist attractions in Vietnam by city‎">
+                                <items>
+                                  <MenuItem fx:id="byHanoiItem" mnemonicParsing="false" onAction="#searchByHanoi" styleClass="modified-menu-item" text="Tourist attractions in Hanoi" />
+                                    <MenuItem fx:id="byDanangItem" mnemonicParsing="false" onAction="#searchByDaNang" styleClass="modified-menu-item" text="Tourist attractions in Danang" />
+                                    <MenuItem fx:id="byHCMItem" mnemonicParsing="false" onAction="#searchByHCM" styleClass="modified-menu-item" text="Tourist attractions in HCM" />
+                                </items>
+                              </MenuButton>
+                              <MenuButton fx:id="byProvinceButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="439.0" styleClass="modified-menu-button" text="▼ Tourist attractions in Vietnam by province‎">
+                                 <items>
+                                    <MenuItem fx:id="byAnGiangItem" mnemonicParsing="false" onAction="#searchByAnGiang" styleClass="modified-menu-item" text="Tourist attractions in An Giang" />
+                                    <MenuItem fx:id="byCanThoItem" mnemonicParsing="false" onAction="#searchByCanTho" styleClass="modified-menu-item" text="Tourist attractions in Can Tho" />
+                                    <MenuItem fx:id="byCaoBangItem" mnemonicParsing="false" onAction="#searchByCaoBang" styleClass="modified-menu-item" text="Tourist attractions in Cao Bang" />
+                                    <MenuItem fx:id="byDongNaiItem" mnemonicParsing="false" onAction="#searchByDongNai" styleClass="modified-menu-item" text="Tourist attractions in Dong Nai" />
+                                    <MenuItem fx:id="byDongThapItem" mnemonicParsing="false" onAction="#searchByDongThap" styleClass="modified-menu-item" text="Tourist attractions in Dong Thap" />
+                                    <MenuItem fx:id="byLaoCaiItem" mnemonicParsing="false" onAction="#searchByLaoCai" styleClass="modified-menu-item" text="Tourist attractions in Lao Cai" />
+                                    <MenuItem fx:id="byNgheAnItem" mnemonicParsing="false" onAction="#searchByNgheAn" styleClass="modified-menu-item" text="Tourist attractions in Nghe An" />
+                                    <MenuItem fx:id="byNinhBinhItem" mnemonicParsing="false" onAction="#searchByNinhBinh" styleClass="modified-menu-item" text="Tourist attractions in Ninh Binh" />
+                                    <MenuItem fx:id="byNinhThuanItem" mnemonicParsing="false" onAction="#searchByNinhThuan" styleClass="modified-menu-item" text="Tourist attractions in Ninh Thuan" />
+                                    <MenuItem fx:id="byQuangBinhItem" mnemonicParsing="false" onAction="#searchByQuangBinh" styleClass="modified-menu-item" text="Tourist attractions in Quang Binh" />
+                                    <MenuItem fx:id="byQuangTriItem" mnemonicParsing="false" onAction="#searchByQuangTri" styleClass="modified-menu-item" text="Tourist attractions in Quang Tri" />
+                                    <MenuItem fx:id="byTayNinhItem" mnemonicParsing="false" onAction="#searchByTayNinh" styleClass="modified-menu-item" text="Tourist attractions in Tay Ninh" />
+                                    <MenuItem fx:id="byThaiNguyenItem" mnemonicParsing="false" onAction="#searchByThaiNguyen" styleClass="modified-menu-item" text="Tourist attractions in Thai Nguyen" />
+                                    <MenuItem fx:id="byVinhPhucItem" mnemonicParsing="false" onAction="#searchByVinhPhuc" styleClass="modified-menu-item" text="Tourist attractions in Vinh Phuc" />
+                                 </items>
+                              </MenuButton>
+                              <Button fx:id="byBeachButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByBeach" prefHeight="31.0" prefWidth="406.0" styleClass="modified-button" text="Beaches of Vietnam" />
+                              <Button fx:id="byEventButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByFestival" prefHeight="31.0" prefWidth="466.0" styleClass="modified-button" text="Festivals in Vietnam‎" />
+                              <Button fx:id="byVenueButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByVenue" prefHeight="31.0" prefWidth="636.0" styleClass="modified-button" text="Entertainment venues in Vietnam" />
+                              <Button fx:id="byGardenButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByGarden" prefHeight="31.0" prefWidth="494.0" styleClass="modified-button" text="Gardens in Vietnam‎" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="262.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="byLakeButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByLake" prefHeight="31.0" prefWidth="354.0" styleClass="modified-button" text="Lakes of Vietnam" />
+                              <Button fx:id="byLandmarkButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByLandmark" prefHeight="31.0" prefWidth="381.0" styleClass="modified-button" text="Landmarks in Vietnam‎" />
+                              <Button fx:id="byMuseumButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByMuseum" prefHeight="31.0" prefWidth="389.0" styleClass="modified-button" text="Museums in Vietnam" />
+                              <Button fx:id="byPagodaButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByPagoda" prefHeight="31.0" prefWidth="346.0" styleClass="modified-button" text="Pagodas in Vietnam" />
+                              <Button fx:id="byParkButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByPark" prefHeight="31.0" prefWidth="386.0" styleClass="modified-button" text="Parks in Vietnam‎" />
+                              <Button fx:id="byProtectedAreaButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByProtectedArea" prefHeight="31.0" prefWidth="382.0" styleClass="modified-button" text="Protected areas of Vietnam‎" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="262.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="byReligousBuildingButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByReligiousBuilding" prefHeight="31.0" prefWidth="410.0" styleClass="modified-button" text="Religious buildings and structures in Vietnam" />
+                              <Button fx:id="byCaveButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByCave" prefHeight="31.0" prefWidth="382.0" styleClass="modified-button" text="Show caves in Vietnam‎ " />
+                              <Button fx:id="bySquareButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchBySquare" prefHeight="31.0" prefWidth="390.0" styleClass="modified-button" text="Squares in Vietnam" />
+                              <Button fx:id="byWaterfallButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByWaterfall" prefHeight="31.0" prefWidth="384.0" styleClass="modified-button" text="Waterfalls of Vietnam‎" />
+                              <Button fx:id="byOtherButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchByOthers" prefHeight="31.0" prefWidth="452.0" styleClass="modified-button" text="Others" />
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="452.0" styleClass="modified-button" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="302.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gui.aboutmenu.AboutMenuController">
+   <children>
+      <Text layoutX="89.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Production team:&#10;&#9;Truong Anh Huy&#10;&#9;Tong Tran Minh Duc&#10;&#9;Hoang Van Phuong&#10;&#9;Van Thanh" />
+      <Text layoutX="46.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a university project of the class Object oriented programming. Have fun messing around :))" wrappingWidth="254.6708984375" />
+      <Button fx:id="okButton" layoutX="269.0" layoutY="257.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="31.0" prefWidth="62.0" text="OK" />
+   </children>
+</AnchorPane>
