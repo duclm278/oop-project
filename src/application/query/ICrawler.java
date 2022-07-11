@@ -3,5 +3,5 @@ package application.query;
 import application.util.ISaveModelAs;
 
 public interface ICrawler {
-	public void extractData(ISaveModelAs writer, String folderPath);
+	public void extractData(ISaveModelAs writer, String folderPath) throws Exception;
 }

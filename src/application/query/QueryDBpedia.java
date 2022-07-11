@@ -1,5 +1,8 @@
 package application.query;
 
+import java.io.IOException;
+
+import org.apache.jena.query.QueryParseException;
 import org.apache.jena.rdf.model.Model;
 
 import application.util.AutoPrefix;
@@ -18,18 +21,16 @@ public abstract class QueryDBpedia implements ICrawler {
 	public abstract String getPagesByTopic();
 
 	public String getOnlineQueryStr() {
-		String QueryStr = "CONSTRUCT {" + "\n" + "?s ?p ?o." + "\n" + "} WHERE {" + " \n"
-				+ getPagesByTopic() + "\n" + "?s ?p ?o." + "\n"
+		String QueryStr = "CONSTRUCT {" + "\n" + "?s ?p ?o." + "\n" + "} WHERE {" + " \n" + getPagesByTopic() + "\n"
+				+ "?s ?p ?o." + "\n"
 				+ "FILTER (!isLITERAL(?o) || LANG(?o) = '' || langMATCHES(lang(?o), 'en') || langMATCHES(lang(?o), 'vn'))"
-				+ "\n"
-				+ "FILTER (STR(?o) != '')" + "\n"
-				+ "FILTER (!CONTAINS(LCASE(STR(?p)), 'wiki'))" + "\n"
+				+ "\n" + "FILTER (STR(?o) != '')" + "\n" + "FILTER (!CONTAINS(LCASE(STR(?p)), 'wiki'))" + "\n"
 				+ "FILTER (!CONTAINS(LCASE(STR(?s)), 'list_of'))" + "\n" + "}";
 		return QueryStr;
 	}
 
 	@Override
-	public void extractData(ISaveModelAs writer, String folderPath) {
+	public void extractData(ISaveModelAs writer, String folderPath) throws IOException, NullPointerException, QueryParseException {
 		String outName = this.getOutName();
 
 		// Online request to get raw data

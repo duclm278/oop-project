@@ -6,31 +6,24 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.riot.*;
 import org.apache.jena.sparql.exec.http.QueryExecutionHTTP;
 
+// Not official yet!
+// Need catching errors!
 public class Processing {
 	public static Model readModel(String filename) {
 		return RDFDataMgr.loadModel(filename);
 	}
 
-	public static Model executeQuery(String queryStr) {
+	public static Model executeQuery(String queryStr) throws NullPointerException, QueryParseException {
 		Model outModel = null;
 		queryStr = AutoPrefix.addPrefixes(queryStr);
 		Query query = null;
-		try {
-			query = QueryFactory.create(queryStr);
-		} catch (QueryParseException e) {
-			e.printStackTrace();
-		}
-		try (QueryExecution qExec = QueryExecutionHTTP.create().endpoint("http://dbpedia.org/sparql").query(query)
-				.param("timeout", "30000")         // Default on the web
-				.param("signal_void", "on")        // Default on the web
-				.param("signal_unconnected", "on") // Default on the web
-				.build()) {
-
-			outModel = qExec.execConstruct();
-		} catch (NullPointerException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
+		query = QueryFactory.create(queryStr);
+		QueryExecution qExec = QueryExecutionHTTP.create().endpoint("http://dbpedia.org/sparql").query(query)
+			.param("timeout", "30000") // Default on the web
+			.param("signal_void", "on") // Default on the web
+			.param("signal_unconnected", "on") // Default on the web
+			.build();
+		outModel = qExec.execConstruct();
 
 		return outModel;
 	}
@@ -45,13 +38,8 @@ public class Processing {
 		}
 	}
 
-	public static void writeModel(String filename, Model model, ISaveModelAs writer) {
-		try {
-			OutputStream outStream = new FileOutputStream(filename, false);
-			writer.saveModel(model, outStream);
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
+	public static void writeModel(String filename, Model model, ISaveModelAs writer) throws IOException {
+		OutputStream outStream = new FileOutputStream(filename, false);
+		writer.saveModel(model, outStream);
 	}
 }

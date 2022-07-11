@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class QueryByCity extends QueryDBpedia {
 	private String cityName;
+
 	private HashMap<String, String> cityList = new HashMap<String, String>();
 
 	public QueryByCity(String cityName) {
