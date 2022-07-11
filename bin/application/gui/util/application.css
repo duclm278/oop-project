@@ -1,0 +1,37 @@
+.modified-button{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.modified-button:hover{
+	-fx-cursor: hand;
+	-fx-underline: true;
+	-fx-text-fill: rgba(0,0,238,1);
+}
+
+.modified-menu-button{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.modified-menu-button:hover .label{
+	-fx-text-fill: rgba(0,0,238,1);
+	-fx-underline: true;
+}
+
+.modified-menu-button:hover .modified-menu-item .label{
+	-fx-text-fill: rgba(0,0,0,1);
+	-fx-underline: false;
+}
+
+.modified-menu-item:focused, .modified-menu-item:focused .label{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-text-fill: rgba(0,0,238,1);
+	-fx-underline: true;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}

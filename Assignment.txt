@@ -29,10 +29,10 @@ Phuong:
     QueryByCave
     QueryBySquare
     QueryByWaterfall
+    QueryByLandmark
+    QueryByMuseum
     QueryByFestival
     QueryByOthers
 
 Huy:
     GUI
-    QueryByLandmark
-    QueryByMuseum

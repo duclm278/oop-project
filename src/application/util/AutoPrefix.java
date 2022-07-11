@@ -22,7 +22,7 @@ public class AutoPrefix {
 			}
 		}
 		prefix.append(query);
-//		System.out.println(prefix.toString());
+		// System.out.println(prefix.toString());
 		return prefix.toString();
 	}
 
@@ -46,13 +46,4 @@ public class AutoPrefix {
 		}
 		return prefixesName;
 	}
-
-//  FOR TESTING
-//	public static void main (String[] args) {
-// 		HashMap<String, String> map = prefixes();
-//		int i = 1;
-//		for(String key :prefixesName.keySet()) {
-//			System.out.println(i++ + ". " + key + "  " + prefixesName.get(key));
-//		}
-//	}
 }
