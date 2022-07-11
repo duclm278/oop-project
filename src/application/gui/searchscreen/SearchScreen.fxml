@@ -60,6 +60,7 @@
                                   <MenuItem fx:id="byHanoiItem" mnemonicParsing="false" onAction="#searchByHanoi" styleClass="modified-menu-item" text="Tourist attractions in Hanoi" />
                                     <MenuItem fx:id="byDanangItem" mnemonicParsing="false" onAction="#searchByDaNang" styleClass="modified-menu-item" text="Tourist attractions in Danang" />
                                     <MenuItem fx:id="byHCMItem" mnemonicParsing="false" onAction="#searchByHCM" styleClass="modified-menu-item" text="Tourist attractions in HCM" />
+                                    <MenuItem fx:id="byHueItem" mnemonicParsing="false" onAction="#searchByHue" styleClass="modified-menu-item" text="Tourist attractions in Hue" />
                                 </items>
                               </MenuButton>
                               <MenuButton fx:id="byProvinceButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="439.0" styleClass="modified-menu-button" text="▼ Tourist attractions in Vietnam by province‎">

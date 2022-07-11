@@ -2,7 +2,7 @@ package application.query;
 
 public class QueryByProtectedArea extends QueryDBpedia {
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Protected_areas_of_Vietnam";
 	}
 

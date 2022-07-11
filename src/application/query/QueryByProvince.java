@@ -5,10 +5,11 @@ public class QueryByProvince extends QueryDBpedia {
 
 	public QueryByProvince(String provinceInput) {
 		this.queryInput = provinceInput.replace(" ", "_");
+		setOutName(getDefaultOutName());
 	}
 
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Tourist_attractions_in_" + queryInput;
 	}
 

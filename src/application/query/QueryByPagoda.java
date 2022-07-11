@@ -2,7 +2,7 @@ package application.query;
 
 public class QueryByPagoda extends QueryDBpedia {
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Pagodas_in_Vietnam";
 	}
 

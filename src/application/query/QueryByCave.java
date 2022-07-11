@@ -1,8 +1,8 @@
 package application.query;
 
-public class QueryByCave extends QueryDBpedia {
+public class QueryByCave extends QueryDBpedia {	
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Show_caves_in_Vietnam";
 	}
 

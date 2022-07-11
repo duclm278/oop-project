@@ -7,7 +7,13 @@ import application.util.ISaveModelAs;
 import application.util.Processing;
 
 public abstract class QueryDBpedia implements ICrawler {
-	public abstract String getOutName();
+	private String outName;
+	
+	public QueryDBpedia() {
+		setOutName(getDefaultOutName());
+	}
+	
+	public abstract String getDefaultOutName();
 
 	public abstract String getPagesByTopic();
 
@@ -32,5 +38,13 @@ public abstract class QueryDBpedia implements ICrawler {
 		Model onlineModel = Processing.executeQuery(onlineQueryStr);
 		String filePath = folderPath + "/" + outName + ".ttl";
 		Processing.writeModel(filePath, onlineModel, writer);
+	}
+	
+	public String getOutName() {
+		return outName;
+	}
+	
+	public void setOutName(String outName) {
+		this.outName = outName;
 	}
 }

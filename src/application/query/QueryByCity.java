@@ -3,10 +3,8 @@ package application.query;
 import java.util.HashMap;
 
 public class QueryByCity extends QueryDBpedia {
-
 	private String cityName;
-	// Vì phần đuôi của mỗi city k có quy luật nên cần tạo 1 map
-	// để lưu trữ
+
 	private HashMap<String, String> cityList = new HashMap<String, String>();
 
 	public QueryByCity(String cityName) {
@@ -18,10 +16,11 @@ public class QueryByCity extends QueryDBpedia {
 		if (cityList.containsKey(this.cityName)) {
 			this.cityName = cityList.get(this.cityName);
 		}
+		setOutName(getDefaultOutName());
 	}
 
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Tourist_attractions_in_" + this.cityName;
 	}
 

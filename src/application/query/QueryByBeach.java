@@ -1,8 +1,8 @@
 package application.query;
 
-public class QueryByBeach extends QueryDBpedia {
+public class QueryByBeach extends QueryDBpedia {	
 	@Override
-	public String getOutName() {
+	public String getDefaultOutName() {
 		return "Beaches_of_Vietnam";
 	}
 
